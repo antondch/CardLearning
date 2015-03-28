@@ -42,7 +42,11 @@
     NSData *data = [NSData dataWithContentsOfFile:[self xmlPath] options:0 error:&error];
     NSXMLParser* parser = [[NSXMLParser alloc]initWithData:data];
     parser.delegate = _parseDelegate;
-    _parseDelegate.doneParse = ^(void){[self doneParse];};
+    __weak LCAPI *weakSelf = self;
+    _parseDelegate.doneParse = ^(void){
+        LCAPI *strongSelf = weakSelf;
+        [strongSelf doneParse];
+    };
     [parser parse];
     
     return nil;

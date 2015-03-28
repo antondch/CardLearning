@@ -58,7 +58,10 @@
     // если сейчас получаем значение элемента cell
     // добавим часть его значения к строке
     if (m_isItemProp) {
-        [m_prop appendString:string];
+        NSString* resS = [string stringByTrimmingCharactersInSet:[NSCharacterSet
+                                                             whitespaceCharacterSet]];
+        [m_prop appendString:resS];
+        
     }
 }
 @end
