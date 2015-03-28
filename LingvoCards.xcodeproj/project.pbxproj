@@ -18,6 +18,9 @@
 		400E19F91AC71A3A0002F00C /* LCItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E19F81AC71A3A0002F00C /* LCItems.m */; };
 		400E19FC1AC725E60002F00C /* LCItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E19FB1AC725E60002F00C /* LCItemStore.m */; };
 		40BA23511AC72A67009757AC /* LCDictionaryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BA23501AC72A67009757AC /* LCDictionaryStore.m */; };
+		40BA23541AC72F4D009757AC /* LCAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BA23531AC72F4D009757AC /* LCAPI.m */; };
+		40BA23571AC7324D009757AC /* XMLItemsParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BA23561AC7324D009757AC /* XMLItemsParserDelegate.m */; };
+		40BA23591AC7386F009757AC /* defaultItems.xml in Resources */ = {isa = PBXBuildFile; fileRef = 40BA23581AC7386F009757AC /* defaultItems.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,11 @@
 		400E19FB1AC725E60002F00C /* LCItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCItemStore.m; sourceTree = "<group>"; };
 		40BA234F1AC72A67009757AC /* LCDictionaryStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDictionaryStore.h; sourceTree = "<group>"; };
 		40BA23501AC72A67009757AC /* LCDictionaryStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDictionaryStore.m; sourceTree = "<group>"; };
+		40BA23521AC72F4D009757AC /* LCAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAPI.h; sourceTree = "<group>"; };
+		40BA23531AC72F4D009757AC /* LCAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAPI.m; sourceTree = "<group>"; };
+		40BA23551AC7324D009757AC /* XMLItemsParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLItemsParserDelegate.h; sourceTree = "<group>"; };
+		40BA23561AC7324D009757AC /* XMLItemsParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLItemsParserDelegate.m; sourceTree = "<group>"; };
+		40BA23581AC7386F009757AC /* defaultItems.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = defaultItems.xml; path = ../../Downloads/defaultItems.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +83,7 @@
 		400E19BD1AC7144E0002F00C = {
 			isa = PBXGroup;
 			children = (
+				40BA23581AC7386F009757AC /* defaultItems.xml */,
 				400E19F21AC7163D0002F00C /* Default-568h@2x.png */,
 				400E19C81AC7144E0002F00C /* LingvoCards */,
 				400E19E51AC7144E0002F00C /* LingvoCardsTests */,
@@ -109,6 +118,10 @@
 				400E19FB1AC725E60002F00C /* LCItemStore.m */,
 				40BA234F1AC72A67009757AC /* LCDictionaryStore.h */,
 				40BA23501AC72A67009757AC /* LCDictionaryStore.m */,
+				40BA23521AC72F4D009757AC /* LCAPI.h */,
+				40BA23531AC72F4D009757AC /* LCAPI.m */,
+				40BA23551AC7324D009757AC /* XMLItemsParserDelegate.h */,
+				40BA23561AC7324D009757AC /* XMLItemsParserDelegate.m */,
 			);
 			path = LingvoCards;
 			sourceTree = "<group>";
@@ -220,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				400E19DA1AC7144E0002F00C /* Images.xcassets in Resources */,
+				40BA23591AC7386F009757AC /* defaultItems.xml in Resources */,
 				400E19F31AC7163D0002F00C /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +255,8 @@
 				40BA23511AC72A67009757AC /* LCDictionaryStore.m in Sources */,
 				400E19CF1AC7144E0002F00C /* AppDelegate.m in Sources */,
 				400E19F91AC71A3A0002F00C /* LCItems.m in Sources */,
+				40BA23541AC72F4D009757AC /* LCAPI.m in Sources */,
+				40BA23571AC7324D009757AC /* XMLItemsParserDelegate.m in Sources */,
 				400E19CC1AC7144E0002F00C /* main.m in Sources */,
 				400E19F61AC71A3A0002F00C /* LCDictionary.m in Sources */,
 				400E19D51AC7144E0002F00C /* ViewController.m in Sources */,

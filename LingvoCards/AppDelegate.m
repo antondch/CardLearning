@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "LCAPI.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    LCAPI *api = [LCAPI defaultAPI];
+    [api getItemsForDictionary:@"default"];
     return YES;
 }
 
