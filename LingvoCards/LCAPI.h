@@ -10,5 +10,5 @@
 
 @interface LCAPI : NSObject
 +(id)defaultAPI;
--(NSArray*)getItemsForDictionary:(NSString*)dictionary;
+-(void)initResources:(NSString*)dictionary;
 @end

@@ -6,11 +6,11 @@
 //  Copyright (c) 2015 DCH. All rights reserved.
 //
 
-#import "LCItems.h"
+#import "LCItem.h"
 #import "LCDictionary.h"
 
 
-@implementation LCItems
+@implementation LCItem
 
 @dynamic ru;
 @dynamic en;

@@ -6,32 +6,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LingvoCards/XMLItemsParserDelegate.m"
-            timestampString = "449268439.744476"
+            filePath = "LingvoCards/LCItemStore.m"
+            timestampString = "449275143.776791"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "-parser:foundCharacters:"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "-loadAllItems"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LingvoCards/XMLItemsParserDelegate.m"
-            timestampString = "449267586.191712"
+            filePath = "LingvoCards/LCItemStore.m"
+            timestampString = "449275147.183027"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "-parser:didEndElement:namespaceURI:qualifiedName:"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "-addNewItemWithEn:transcription:ru:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

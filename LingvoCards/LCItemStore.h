@@ -10,5 +10,6 @@
 
 @interface LCItemStore : NSObject
 +(id)sharedStore;
+-(void)addNewItemWithEn:(NSString*) en transcription:(NSString*)transcription ru:(NSString*)ru;
 @property(nonatomic,readonly) NSArray *allItems;
 @end

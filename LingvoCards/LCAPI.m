@@ -8,6 +8,8 @@
 
 #import "LCAPI.h"
 #import "XMLItemsParserDelegate.h"
+#import "LCItemStore.h"
+
 @interface LCAPI()
 @property (nonatomic,strong)XMLItemsParserDelegate *parseDelegate;
 @end
@@ -35,8 +37,9 @@
 }
 
 #pragma mark - get items
-
--(NSArray*)getItemsForDictionary:(NSString *)dictionary{
+-(void)initResources:(NSString *)dictionary{
+    LCItemStore *itemStore = [LCItemStore sharedStore];
+    if([[itemStore allItems]count]==0){
     _parseDelegate = [[XMLItemsParserDelegate alloc]init];
     NSError *error;
     NSData *data = [NSData dataWithContentsOfFile:[self xmlPath] options:0 error:&error];
@@ -48,12 +51,15 @@
         [strongSelf doneParse];
     };
     [parser parse];
-    
-    return nil;
+    }
 }
 
 -(void)doneParse{
-    
+    LCItemStore *itemStore = [LCItemStore sharedStore];
+    for(id object in self.parseDelegate.items){
+        NSArray *itemArray = (NSArray*)object;
+        [itemStore addNewItemWithEn:itemArray[0] transcription:itemArray[1] ru:itemArray[2]];
+    }
     NSLog(@"done parse");
 }
 

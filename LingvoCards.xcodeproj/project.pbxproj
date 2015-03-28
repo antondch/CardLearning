@@ -15,7 +15,7 @@
 		400E19E91AC7144E0002F00C /* LingvoCardsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E19E81AC7144E0002F00C /* LingvoCardsTests.m */; };
 		400E19F31AC7163D0002F00C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 400E19F21AC7163D0002F00C /* Default-568h@2x.png */; };
 		400E19F61AC71A3A0002F00C /* LCDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E19F51AC71A3A0002F00C /* LCDictionary.m */; };
-		400E19F91AC71A3A0002F00C /* LCItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E19F81AC71A3A0002F00C /* LCItems.m */; };
+		400E19F91AC71A3A0002F00C /* LCItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E19F81AC71A3A0002F00C /* LCItem.m */; };
 		400E19FC1AC725E60002F00C /* LCItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E19FB1AC725E60002F00C /* LCItemStore.m */; };
 		40BA23511AC72A67009757AC /* LCDictionaryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BA23501AC72A67009757AC /* LCDictionaryStore.m */; };
 		40BA23541AC72F4D009757AC /* LCAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BA23531AC72F4D009757AC /* LCAPI.m */; };
@@ -49,8 +49,8 @@
 		400E19F21AC7163D0002F00C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		400E19F41AC71A3A0002F00C /* LCDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDictionary.h; sourceTree = "<group>"; };
 		400E19F51AC71A3A0002F00C /* LCDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDictionary.m; sourceTree = "<group>"; };
-		400E19F71AC71A3A0002F00C /* LCItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCItems.h; sourceTree = "<group>"; };
-		400E19F81AC71A3A0002F00C /* LCItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCItems.m; sourceTree = "<group>"; };
+		400E19F71AC71A3A0002F00C /* LCItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCItem.h; sourceTree = "<group>"; };
+		400E19F81AC71A3A0002F00C /* LCItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCItem.m; sourceTree = "<group>"; };
 		400E19FA1AC725E60002F00C /* LCItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCItemStore.h; sourceTree = "<group>"; };
 		400E19FB1AC725E60002F00C /* LCItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCItemStore.m; sourceTree = "<group>"; };
 		40BA234F1AC72A67009757AC /* LCDictionaryStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDictionaryStore.h; sourceTree = "<group>"; };
@@ -110,8 +110,8 @@
 				400E19D91AC7144E0002F00C /* Images.xcassets */,
 				400E19D01AC7144E0002F00C /* LingvoCards.xcdatamodeld */,
 				400E19C91AC7144E0002F00C /* Supporting Files */,
-				400E19F71AC71A3A0002F00C /* LCItems.h */,
-				400E19F81AC71A3A0002F00C /* LCItems.m */,
+				400E19F71AC71A3A0002F00C /* LCItem.h */,
+				400E19F81AC71A3A0002F00C /* LCItem.m */,
 				400E19F41AC71A3A0002F00C /* LCDictionary.h */,
 				400E19F51AC71A3A0002F00C /* LCDictionary.m */,
 				400E19FA1AC725E60002F00C /* LCItemStore.h */,
@@ -254,7 +254,7 @@
 			files = (
 				40BA23511AC72A67009757AC /* LCDictionaryStore.m in Sources */,
 				400E19CF1AC7144E0002F00C /* AppDelegate.m in Sources */,
-				400E19F91AC71A3A0002F00C /* LCItems.m in Sources */,
+				400E19F91AC71A3A0002F00C /* LCItem.m in Sources */,
 				40BA23541AC72F4D009757AC /* LCAPI.m in Sources */,
 				40BA23571AC7324D009757AC /* XMLItemsParserDelegate.m in Sources */,
 				400E19CC1AC7144E0002F00C /* main.m in Sources */,

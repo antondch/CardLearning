@@ -11,7 +11,7 @@
 
 @class LCDictionary;
 
-@interface LCItems : NSManagedObject
+@interface LCItem : NSManagedObject
 
 @property (nonatomic, retain) NSString * ru;
 @property (nonatomic, retain) NSString * en;

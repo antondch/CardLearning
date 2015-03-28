@@ -7,6 +7,7 @@
 //
 
 #import "LCDictionaryStore.h"
+#import "AppDelegate.h"
 @interface LCDictionaryStore()
 @property (nonatomic,strong)NSMutableArray* privateItems;
 @end
@@ -29,6 +30,7 @@
 
 -(id)initPrivate{
     self = [super init];
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     self.privateItems = [[NSMutableArray alloc]init];
     return self;
 }
