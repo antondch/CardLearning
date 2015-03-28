@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		400E19CC1AC7144E0002F00C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E19CB1AC7144E0002F00C /* main.m */; };
+		400E19CF1AC7144E0002F00C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E19CE1AC7144E0002F00C /* AppDelegate.m */; };
+		400E19D21AC7144E0002F00C /* LingvoCards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 400E19D01AC7144E0002F00C /* LingvoCards.xcdatamodeld */; };
+		400E19D51AC7144E0002F00C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E19D41AC7144E0002F00C /* ViewController.m */; };
+		400E19DA1AC7144E0002F00C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 400E19D91AC7144E0002F00C /* Images.xcassets */; };
+		400E19E91AC7144E0002F00C /* LingvoCardsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E19E81AC7144E0002F00C /* LingvoCardsTests.m */; };
+		400E19F31AC7163D0002F00C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 400E19F21AC7163D0002F00C /* Default-568h@2x.png */; };
+		400E19F61AC71A3A0002F00C /* LCDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E19F51AC71A3A0002F00C /* LCDictionary.m */; };
+		400E19F91AC71A3A0002F00C /* LCItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E19F81AC71A3A0002F00C /* LCItems.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		400E19E31AC7144E0002F00C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 400E19BE1AC7144E0002F00C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 400E19C51AC7144E0002F00C;
+			remoteInfo = LingvoCards;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		400E19C61AC7144E0002F00C /* LingvoCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LingvoCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		400E19CA1AC7144E0002F00C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		400E19CB1AC7144E0002F00C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		400E19CD1AC7144E0002F00C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		400E19CE1AC7144E0002F00C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		400E19D11AC7144E0002F00C /* LingvoCards.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LingvoCards.xcdatamodel; sourceTree = "<group>"; };
+		400E19D31AC7144E0002F00C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		400E19D41AC7144E0002F00C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		400E19D91AC7144E0002F00C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		400E19E21AC7144E0002F00C /* LingvoCardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LingvoCardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		400E19E71AC7144E0002F00C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		400E19E81AC7144E0002F00C /* LingvoCardsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LingvoCardsTests.m; sourceTree = "<group>"; };
+		400E19F21AC7163D0002F00C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		400E19F41AC71A3A0002F00C /* LCDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDictionary.h; sourceTree = "<group>"; };
+		400E19F51AC71A3A0002F00C /* LCDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDictionary.m; sourceTree = "<group>"; };
+		400E19F71AC71A3A0002F00C /* LCItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCItems.h; sourceTree = "<group>"; };
+		400E19F81AC71A3A0002F00C /* LCItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCItems.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		400E19C31AC7144E0002F00C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		400E19DF1AC7144E0002F00C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		400E19BD1AC7144E0002F00C = {
+			isa = PBXGroup;
+			children = (
+				400E19F21AC7163D0002F00C /* Default-568h@2x.png */,
+				400E19C81AC7144E0002F00C /* LingvoCards */,
+				400E19E51AC7144E0002F00C /* LingvoCardsTests */,
+				400E19C71AC7144E0002F00C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		400E19C71AC7144E0002F00C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				400E19C61AC7144E0002F00C /* LingvoCards.app */,
+				400E19E21AC7144E0002F00C /* LingvoCardsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		400E19C81AC7144E0002F00C /* LingvoCards */ = {
+			isa = PBXGroup;
+			children = (
+				400E19CD1AC7144E0002F00C /* AppDelegate.h */,
+				400E19CE1AC7144E0002F00C /* AppDelegate.m */,
+				400E19D31AC7144E0002F00C /* ViewController.h */,
+				400E19D41AC7144E0002F00C /* ViewController.m */,
+				400E19D91AC7144E0002F00C /* Images.xcassets */,
+				400E19D01AC7144E0002F00C /* LingvoCards.xcdatamodeld */,
+				400E19C91AC7144E0002F00C /* Supporting Files */,
+				400E19F71AC71A3A0002F00C /* LCItems.h */,
+				400E19F81AC71A3A0002F00C /* LCItems.m */,
+				400E19F41AC71A3A0002F00C /* LCDictionary.h */,
+				400E19F51AC71A3A0002F00C /* LCDictionary.m */,
+			);
+			path = LingvoCards;
+			sourceTree = "<group>";
+		};
+		400E19C91AC7144E0002F00C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				400E19CA1AC7144E0002F00C /* Info.plist */,
+				400E19CB1AC7144E0002F00C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		400E19E51AC7144E0002F00C /* LingvoCardsTests */ = {
+			isa = PBXGroup;
+			children = (
+				400E19E81AC7144E0002F00C /* LingvoCardsTests.m */,
+				400E19E61AC7144E0002F00C /* Supporting Files */,
+			);
+			path = LingvoCardsTests;
+			sourceTree = "<group>";
+		};
+		400E19E61AC7144E0002F00C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				400E19E71AC7144E0002F00C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		400E19C51AC7144E0002F00C /* LingvoCards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 400E19EC1AC7144E0002F00C /* Build configuration list for PBXNativeTarget "LingvoCards" */;
+			buildPhases = (
+				400E19C21AC7144E0002F00C /* Sources */,
+				400E19C31AC7144E0002F00C /* Frameworks */,
+				400E19C41AC7144E0002F00C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LingvoCards;
+			productName = LingvoCards;
+			productReference = 400E19C61AC7144E0002F00C /* LingvoCards.app */;
+			productType = "com.apple.product-type.application";
+		};
+		400E19E11AC7144E0002F00C /* LingvoCardsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 400E19EF1AC7144E0002F00C /* Build configuration list for PBXNativeTarget "LingvoCardsTests" */;
+			buildPhases = (
+				400E19DE1AC7144E0002F00C /* Sources */,
+				400E19DF1AC7144E0002F00C /* Frameworks */,
+				400E19E01AC7144E0002F00C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				400E19E41AC7144E0002F00C /* PBXTargetDependency */,
+			);
+			name = LingvoCardsTests;
+			productName = LingvoCardsTests;
+			productReference = 400E19E21AC7144E0002F00C /* LingvoCardsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		400E19BE1AC7144E0002F00C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = DCH;
+				TargetAttributes = {
+					400E19C51AC7144E0002F00C = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					400E19E11AC7144E0002F00C = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 400E19C51AC7144E0002F00C;
+					};
+				};
+			};
+			buildConfigurationList = 400E19C11AC7144E0002F00C /* Build configuration list for PBXProject "LingvoCards" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 400E19BD1AC7144E0002F00C;
+			productRefGroup = 400E19C71AC7144E0002F00C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				400E19C51AC7144E0002F00C /* LingvoCards */,
+				400E19E11AC7144E0002F00C /* LingvoCardsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		400E19C41AC7144E0002F00C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				400E19DA1AC7144E0002F00C /* Images.xcassets in Resources */,
+				400E19F31AC7163D0002F00C /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		400E19E01AC7144E0002F00C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		400E19C21AC7144E0002F00C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				400E19CF1AC7144E0002F00C /* AppDelegate.m in Sources */,
+				400E19F91AC71A3A0002F00C /* LCItems.m in Sources */,
+				400E19CC1AC7144E0002F00C /* main.m in Sources */,
+				400E19F61AC71A3A0002F00C /* LCDictionary.m in Sources */,
+				400E19D51AC7144E0002F00C /* ViewController.m in Sources */,
+				400E19D21AC7144E0002F00C /* LingvoCards.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		400E19DE1AC7144E0002F00C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				400E19E91AC7144E0002F00C /* LingvoCardsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		400E19E41AC7144E0002F00C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 400E19C51AC7144E0002F00C /* LingvoCards */;
+			targetProxy = 400E19E31AC7144E0002F00C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		400E19EA1AC7144E0002F00C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		400E19EB1AC7144E0002F00C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		400E19ED1AC7144E0002F00C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LingvoCards/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		400E19EE1AC7144E0002F00C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LingvoCards/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		400E19F01AC7144E0002F00C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LingvoCardsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LingvoCards.app/LingvoCards";
+			};
+			name = Debug;
+		};
+		400E19F11AC7144E0002F00C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LingvoCardsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LingvoCards.app/LingvoCards";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		400E19C11AC7144E0002F00C /* Build configuration list for PBXProject "LingvoCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				400E19EA1AC7144E0002F00C /* Debug */,
+				400E19EB1AC7144E0002F00C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		400E19EC1AC7144E0002F00C /* Build configuration list for PBXNativeTarget "LingvoCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				400E19ED1AC7144E0002F00C /* Debug */,
+				400E19EE1AC7144E0002F00C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		400E19EF1AC7144E0002F00C /* Build configuration list for PBXNativeTarget "LingvoCardsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				400E19F01AC7144E0002F00C /* Debug */,
+				400E19F11AC7144E0002F00C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		400E19D01AC7144E0002F00C /* LingvoCards.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				400E19D11AC7144E0002F00C /* LingvoCards.xcdatamodel */,
+			);
+			currentVersion = 400E19D11AC7144E0002F00C /* LingvoCards.xcdatamodel */;
+			path = LingvoCards.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 400E19BE1AC7144E0002F00C /* Project object */;
+}
