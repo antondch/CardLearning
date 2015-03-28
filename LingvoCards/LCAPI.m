@@ -13,6 +13,7 @@
 @interface LCAPI()
 @property (nonatomic,strong)XMLItemsParserDelegate *parseDelegate;
 @end
+
 @implementation LCAPI
 
 #pragma mark - init
@@ -61,6 +62,12 @@
         [itemStore addNewItemWithEn:itemArray[0] transcription:itemArray[1] ru:itemArray[2]];
     }
     NSLog(@"done parse");
+}
+
+-(void)sendCompleteInit{
+    if(self.initComplete){
+        self.initComplete();
+    }
 }
 
 -(NSString*)xmlPath{

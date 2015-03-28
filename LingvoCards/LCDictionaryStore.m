@@ -30,7 +30,6 @@
 
 -(id)initPrivate{
     self = [super init];
-    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     self.privateItems = [[NSMutableArray alloc]init];
     return self;
 }

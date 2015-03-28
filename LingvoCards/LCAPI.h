@@ -10,5 +10,6 @@
 
 @interface LCAPI : NSObject
 +(id)defaultAPI;
+@property (nonatomic, copy) void(^initComplete)(void);
 -(void)initResources:(NSString*)dictionary;
 @end

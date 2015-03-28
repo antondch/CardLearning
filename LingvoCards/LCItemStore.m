@@ -68,4 +68,9 @@
     item.transcription = transcription;
     [self.privateItems addObject:item];
 }
+
+
+-(NSArray*)allItems{
+    return self.privateItems;
+}
 @end
