@@ -7,7 +7,9 @@
 //
 
 #import "LCDictionaryStore.h"
-
+@interface LCDictionaryStore()
+@property (nonatomic,strong)NSMutableArray* privateItems;
+@end
 @implementation LCDictionaryStore
 #pragma mark - init
 
@@ -21,13 +23,18 @@
 }
 
 -(id)init{
-    @throw [NSException exceptionWithName:@"Singleton" reason:@"use +[LCItemStore sharedStore]" userInfo:nil];
+    @throw [NSException exceptionWithName:@"Singleton" reason:@"use +[LCDictionaryStore sharedStore]" userInfo:nil];
     return nil;
 }
 
 -(id)initPrivate{
     self = [super init];
+    self.privateItems = [[NSMutableArray alloc]init];
     return self;
+}
+
+-(NSArray*)allItems{
+    return self.privateItems;
 }
 
 @end

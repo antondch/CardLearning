@@ -10,4 +10,5 @@
 
 @interface LCItemStore : NSObject
 +(id)sharedStore;
+@property(nonatomic,readonly) NSArray *allItems;
 @end
