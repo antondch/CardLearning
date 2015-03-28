@@ -17,6 +17,7 @@
 		400E19F61AC71A3A0002F00C /* LCDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E19F51AC71A3A0002F00C /* LCDictionary.m */; };
 		400E19F91AC71A3A0002F00C /* LCItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E19F81AC71A3A0002F00C /* LCItems.m */; };
 		400E19FC1AC725E60002F00C /* LCItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E19FB1AC725E60002F00C /* LCItemStore.m */; };
+		40BA23511AC72A67009757AC /* LCDictionaryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BA23501AC72A67009757AC /* LCDictionaryStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		400E19F81AC71A3A0002F00C /* LCItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCItems.m; sourceTree = "<group>"; };
 		400E19FA1AC725E60002F00C /* LCItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCItemStore.h; sourceTree = "<group>"; };
 		400E19FB1AC725E60002F00C /* LCItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCItemStore.m; sourceTree = "<group>"; };
+		40BA234F1AC72A67009757AC /* LCDictionaryStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDictionaryStore.h; sourceTree = "<group>"; };
+		40BA23501AC72A67009757AC /* LCDictionaryStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDictionaryStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 				400E19F51AC71A3A0002F00C /* LCDictionary.m */,
 				400E19FA1AC725E60002F00C /* LCItemStore.h */,
 				400E19FB1AC725E60002F00C /* LCItemStore.m */,
+				40BA234F1AC72A67009757AC /* LCDictionaryStore.h */,
+				40BA23501AC72A67009757AC /* LCDictionaryStore.m */,
 			);
 			path = LingvoCards;
 			sourceTree = "<group>";
@@ -233,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40BA23511AC72A67009757AC /* LCDictionaryStore.m in Sources */,
 				400E19CF1AC7144E0002F00C /* AppDelegate.m in Sources */,
 				400E19F91AC71A3A0002F00C /* LCItems.m in Sources */,
 				400E19CC1AC7144E0002F00C /* main.m in Sources */,
@@ -413,6 +419,7 @@
 				400E19EE1AC7144E0002F00C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		400E19EF1AC7144E0002F00C /* Build configuration list for PBXNativeTarget "LingvoCardsTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +428,7 @@
 				400E19F11AC7144E0002F00C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
