@@ -22,10 +22,12 @@
 
 - (void)rotateView{
     CATransform3D perspectiveTransform = CATransform3DIdentity;
-    perspectiveTransform.m34 = 1.0 / -500;
+    perspectiveTransform.m34 = 1.0 / -400;
+    
     perspectiveTransform = CATransform3DRotate(perspectiveTransform,  M_PI / 1, 0.0f, 1.0f, 0.0f);
     //     cardController.view.layer.anchorPoint = CGPointMake(0.0, 0.0);
     self.view.layer.zPosition=500;
+    self.view.layer.allowsEdgeAntialiasing = YES;
     [UIView animateWithDuration:1.4 animations:^{
         self.view.layer.transform = perspectiveTransform;
     }completion:^(BOOL finished) {

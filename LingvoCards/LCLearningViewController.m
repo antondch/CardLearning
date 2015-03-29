@@ -35,6 +35,7 @@
 }
 
 - (CGRect)frameForContentController{
+    
     CGRect frame = CGRectMake(50, 50, self.view.bounds.size.width-200, (self.view.bounds.size.width-200)*1.5);
     return frame;
 }
