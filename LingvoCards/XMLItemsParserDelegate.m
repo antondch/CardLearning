@@ -30,7 +30,7 @@
     m_done = YES;
     m_error = validationError;
 }
-// встретили новый элемент
+
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict {
     m_isItem = [[elementName lowercaseString] isEqualToString:@"row"];
     m_isItemProp = [[elementName lowercaseString] isEqualToString:@"data"];

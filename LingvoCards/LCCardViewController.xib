@@ -29,15 +29,15 @@
                         <action selector="soundButton:" destination="-1" eventType="touchUpInside" id="TKV-kC-dKE"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msB-dN-Mif">
-                    <rect key="frame" x="139" y="254" width="42" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="englishText" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msB-dN-Mif">
+                    <rect key="frame" x="117" y="254" width="86" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgD-2P-gqW">
-                    <rect key="frame" x="137" y="455" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
+                    <rect key="frame" x="129" y="455" width="63" height="30"/>
+                    <state key="normal" title="Выучено"/>
                     <connections>
                         <action selector="learnButton:" destination="-1" eventType="touchUpInside" id="gWc-Zm-Jan"/>
                     </connections>
