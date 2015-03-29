@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LCAPI.h"
+#import "LCLearningViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -18,6 +19,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     LCAPI *api = [LCAPI defaultAPI];
+    LCLearningViewController *learningViewController = [[LCLearningViewController alloc]init];
+    UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:learningViewController];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window setRootViewController: learningViewController];
+    [self.window makeKeyAndVisible];
+    self.window.backgroundColor = [UIColor clearColor];
     [api initResources:@"default"];
     return YES;
 }

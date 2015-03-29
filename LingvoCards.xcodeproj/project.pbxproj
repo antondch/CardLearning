@@ -10,7 +10,6 @@
 		400E19CC1AC7144E0002F00C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E19CB1AC7144E0002F00C /* main.m */; };
 		400E19CF1AC7144E0002F00C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E19CE1AC7144E0002F00C /* AppDelegate.m */; };
 		400E19D21AC7144E0002F00C /* LingvoCards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 400E19D01AC7144E0002F00C /* LingvoCards.xcdatamodeld */; };
-		400E19D51AC7144E0002F00C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E19D41AC7144E0002F00C /* ViewController.m */; };
 		400E19DA1AC7144E0002F00C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 400E19D91AC7144E0002F00C /* Images.xcassets */; };
 		400E19E91AC7144E0002F00C /* LingvoCardsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E19E81AC7144E0002F00C /* LingvoCardsTests.m */; };
 		400E19F31AC7163D0002F00C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 400E19F21AC7163D0002F00C /* Default-568h@2x.png */; };
@@ -21,8 +20,9 @@
 		40BA23541AC72F4D009757AC /* LCAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BA23531AC72F4D009757AC /* LCAPI.m */; };
 		40BA23571AC7324D009757AC /* XMLItemsParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BA23561AC7324D009757AC /* XMLItemsParserDelegate.m */; };
 		40BA23591AC7386F009757AC /* defaultItems.xml in Resources */ = {isa = PBXBuildFile; fileRef = 40BA23581AC7386F009757AC /* defaultItems.xml */; };
-		40BA235C1AC76E8F009757AC /* LCLearningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BA235B1AC76E8F009757AC /* LCLearningViewController.m */; };
-		40BA235E1AC76EB7009757AC /* LCLearningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40BA235D1AC76EB7009757AC /* LCLearningViewController.xib */; };
+		40BA23601AC7738E009757AC /* learningBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BA235F1AC7738E009757AC /* learningBg.png */; };
+		40BA23641AC77AC7009757AC /* LCLearningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BA23621AC77AC7009757AC /* LCLearningViewController.m */; };
+		40BA23651AC77AC7009757AC /* LCLearningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40BA23631AC77AC7009757AC /* LCLearningViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +42,6 @@
 		400E19CD1AC7144E0002F00C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		400E19CE1AC7144E0002F00C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		400E19D11AC7144E0002F00C /* LingvoCards.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LingvoCards.xcdatamodel; sourceTree = "<group>"; };
-		400E19D31AC7144E0002F00C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		400E19D41AC7144E0002F00C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		400E19D91AC7144E0002F00C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		400E19E21AC7144E0002F00C /* LingvoCardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LingvoCardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		400E19E71AC7144E0002F00C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,9 +60,10 @@
 		40BA23551AC7324D009757AC /* XMLItemsParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLItemsParserDelegate.h; sourceTree = "<group>"; };
 		40BA23561AC7324D009757AC /* XMLItemsParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLItemsParserDelegate.m; sourceTree = "<group>"; };
 		40BA23581AC7386F009757AC /* defaultItems.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = defaultItems.xml; path = ../../Downloads/defaultItems.xml; sourceTree = "<group>"; };
-		40BA235A1AC76E8F009757AC /* LCLearningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLearningViewController.h; sourceTree = "<group>"; };
-		40BA235B1AC76E8F009757AC /* LCLearningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLearningViewController.m; sourceTree = "<group>"; };
-		40BA235D1AC76EB7009757AC /* LCLearningViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCLearningViewController.xib; sourceTree = "<group>"; };
+		40BA235F1AC7738E009757AC /* learningBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = learningBg.png; path = ../../LCASSETS/learningBg.png; sourceTree = "<group>"; };
+		40BA23611AC77AC7009757AC /* LCLearningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLearningViewController.h; sourceTree = "<group>"; };
+		40BA23621AC77AC7009757AC /* LCLearningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLearningViewController.m; sourceTree = "<group>"; };
+		40BA23631AC77AC7009757AC /* LCLearningViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCLearningViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +87,7 @@
 		400E19BD1AC7144E0002F00C = {
 			isa = PBXGroup;
 			children = (
+				40BA235F1AC7738E009757AC /* learningBg.png */,
 				40BA23581AC7386F009757AC /* defaultItems.xml */,
 				400E19F21AC7163D0002F00C /* Default-568h@2x.png */,
 				400E19C81AC7144E0002F00C /* LingvoCards */,
@@ -110,8 +110,6 @@
 			children = (
 				400E19CD1AC7144E0002F00C /* AppDelegate.h */,
 				400E19CE1AC7144E0002F00C /* AppDelegate.m */,
-				400E19D31AC7144E0002F00C /* ViewController.h */,
-				400E19D41AC7144E0002F00C /* ViewController.m */,
 				400E19D91AC7144E0002F00C /* Images.xcassets */,
 				400E19D01AC7144E0002F00C /* LingvoCards.xcdatamodeld */,
 				400E19C91AC7144E0002F00C /* Supporting Files */,
@@ -127,9 +125,9 @@
 				40BA23531AC72F4D009757AC /* LCAPI.m */,
 				40BA23551AC7324D009757AC /* XMLItemsParserDelegate.h */,
 				40BA23561AC7324D009757AC /* XMLItemsParserDelegate.m */,
-				40BA235A1AC76E8F009757AC /* LCLearningViewController.h */,
-				40BA235B1AC76E8F009757AC /* LCLearningViewController.m */,
-				40BA235D1AC76EB7009757AC /* LCLearningViewController.xib */,
+				40BA23611AC77AC7009757AC /* LCLearningViewController.h */,
+				40BA23621AC77AC7009757AC /* LCLearningViewController.m */,
+				40BA23631AC77AC7009757AC /* LCLearningViewController.xib */,
 			);
 			path = LingvoCards;
 			sourceTree = "<group>";
@@ -242,8 +240,9 @@
 			files = (
 				400E19DA1AC7144E0002F00C /* Images.xcassets in Resources */,
 				40BA23591AC7386F009757AC /* defaultItems.xml in Resources */,
+				40BA23601AC7738E009757AC /* learningBg.png in Resources */,
+				40BA23651AC77AC7009757AC /* LCLearningViewController.xib in Resources */,
 				400E19F31AC7163D0002F00C /* Default-568h@2x.png in Resources */,
-				40BA235E1AC76EB7009757AC /* LCLearningViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,12 +263,11 @@
 				40BA23511AC72A67009757AC /* LCDictionaryStore.m in Sources */,
 				400E19CF1AC7144E0002F00C /* AppDelegate.m in Sources */,
 				400E19F91AC71A3A0002F00C /* LCItem.m in Sources */,
+				40BA23641AC77AC7009757AC /* LCLearningViewController.m in Sources */,
 				40BA23541AC72F4D009757AC /* LCAPI.m in Sources */,
 				40BA23571AC7324D009757AC /* XMLItemsParserDelegate.m in Sources */,
 				400E19CC1AC7144E0002F00C /* main.m in Sources */,
 				400E19F61AC71A3A0002F00C /* LCDictionary.m in Sources */,
-				40BA235C1AC76E8F009757AC /* LCLearningViewController.m in Sources */,
-				400E19D51AC7144E0002F00C /* ViewController.m in Sources */,
 				400E19D21AC7144E0002F00C /* LingvoCards.xcdatamodeld in Sources */,
 				400E19FC1AC725E60002F00C /* LCItemStore.m in Sources */,
 			);
@@ -375,7 +373,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LingvoCards/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -386,7 +384,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LingvoCards/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

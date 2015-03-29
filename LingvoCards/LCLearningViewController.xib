@@ -5,12 +5,34 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LCLearningViewController"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LCLearningViewController">
+            <connections>
+                <outlet property="bgImage" destination="JhP-Xe-CMk" id="a00-Ny-4qq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="learningBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="JhP-Xe-CMk">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                </imageView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="JhP-Xe-CMk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="193-ln-Si4"/>
+                <constraint firstItem="JhP-Xe-CMk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="CXh-Nb-wjK"/>
+                <constraint firstAttribute="trailing" secondItem="JhP-Xe-CMk" secondAttribute="trailing" id="CYH-Iu-sk2"/>
+                <constraint firstAttribute="bottom" secondItem="JhP-Xe-CMk" secondAttribute="bottom" id="gIQ-ar-RMK"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
         </view>
     </objects>
+    <resources>
+        <image name="learningBg.png" width="640" height="1136"/>
+    </resources>
 </document>
