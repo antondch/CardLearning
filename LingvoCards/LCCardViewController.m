@@ -17,6 +17,26 @@
 - (IBAction)soundButton:(id)sender {
 }
 - (IBAction)learnButton:(id)sender {
+    [self rotateView];
+}
+
+- (void)rotateView{
+    CATransform3D perspectiveTransform = CATransform3DIdentity;
+    perspectiveTransform.m34 = 1.0 / -500;
+    perspectiveTransform = CATransform3DRotate(perspectiveTransform,  M_PI / 1, 0.0f, 1.0f, 0.0f);
+    //     cardController.view.layer.anchorPoint = CGPointMake(0.0, 0.0);
+    self.view.layer.zPosition=500;
+    [UIView animateWithDuration:1.4 animations:^{
+        self.view.layer.transform = perspectiveTransform;
+    }completion:^(BOOL finished) {
+        
+        CATransform3D originalPerspectiveTransform = CATransform3DIdentity;
+        [UIView animateWithDuration:0.9 animations:^{
+            self.view.layer.transform = originalPerspectiveTransform;
+        }completion:^(BOOL finished) {
+            self.view.layer.zPosition=0;
+        }];
+    }];
 }
 
 - (void)viewDidLoad {
