@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LCCardViewController">
             <connections>
+                <outlet property="cardBackImage" destination="k0d-KT-Pza" id="ZNz-n8-4Vb"/>
                 <outlet property="enLabel" destination="msB-dN-Mif" id="Xbg-YP-MVl"/>
                 <outlet property="view" destination="Rri-Iy-Ot7" id="uZE-r1-mM9"/>
             </connections>
