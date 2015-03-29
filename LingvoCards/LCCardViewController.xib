@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <objects>
@@ -40,19 +41,29 @@
                         <action selector="learnButton:" destination="-1" eventType="touchUpInside" id="gWc-Zm-Jan"/>
                     </connections>
                 </button>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardBackBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="k0d-KT-Pza">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" none="YES" image="YES" notEnabled="YES"/>
+                    </accessibility>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="centerX" secondItem="yZM-cc-yin" secondAttribute="centerX" id="2bM-LD-gaH"/>
+                <constraint firstItem="XLl-bH-Es1" firstAttribute="height" secondItem="k0d-KT-Pza" secondAttribute="height" id="3ED-iv-jTl"/>
                 <constraint firstAttribute="bottom" secondItem="MgD-2P-gqW" secondAttribute="bottom" constant="83" id="7jv-qM-f9Y"/>
                 <constraint firstAttribute="trailing" secondItem="XLl-bH-Es1" secondAttribute="trailing" id="NgK-MO-1Sx"/>
                 <constraint firstAttribute="centerX" secondItem="msB-dN-Mif" secondAttribute="centerX" id="Pkc-Jv-gb7"/>
+                <constraint firstItem="XLl-bH-Es1" firstAttribute="width" secondItem="k0d-KT-Pza" secondAttribute="width" id="TtM-oX-WmF"/>
                 <constraint firstItem="yZM-cc-yin" firstAttribute="top" secondItem="Rri-Iy-Ot7" secondAttribute="top" constant="70" id="WeX-Bz-W69"/>
                 <constraint firstAttribute="centerX" secondItem="MgD-2P-gqW" secondAttribute="centerX" id="cPg-Ms-5Gr"/>
                 <constraint firstAttribute="centerX" secondItem="XLl-bH-Es1" secondAttribute="centerX" id="cqk-gS-1Uk"/>
                 <constraint firstItem="XLl-bH-Es1" firstAttribute="top" secondItem="Rri-Iy-Ot7" secondAttribute="top" id="gpT-j1-xc2"/>
                 <constraint firstAttribute="centerY" secondItem="XLl-bH-Es1" secondAttribute="centerY" id="hUi-Fq-mnk"/>
+                <constraint firstAttribute="centerX" secondItem="k0d-KT-Pza" secondAttribute="centerX" id="lwM-fd-IAQ"/>
+                <constraint firstAttribute="centerY" secondItem="k0d-KT-Pza" secondAttribute="centerY" id="nOn-2P-a3X"/>
                 <constraint firstAttribute="bottom" secondItem="XLl-bH-Es1" secondAttribute="bottom" id="q6P-Or-yeS"/>
                 <constraint firstAttribute="centerY" secondItem="msB-dN-Mif" secondAttribute="centerY" constant="19.5" id="svN-uX-ZXR"/>
                 <constraint firstItem="XLl-bH-Es1" firstAttribute="leading" secondItem="Rri-Iy-Ot7" secondAttribute="leading" id="x7H-u2-aDH"/>
@@ -62,6 +73,7 @@
         </view>
     </objects>
     <resources>
-        <image name="cardBg.png" width="512" height="775"/>
+        <image name="cardBackBg.png" width="502" height="760"/>
+        <image name="cardBg.png" width="502" height="760"/>
     </resources>
 </document>

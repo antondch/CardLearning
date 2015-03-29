@@ -16,6 +16,8 @@
 		400E19F61AC71A3A0002F00C /* LCDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E19F51AC71A3A0002F00C /* LCDictionary.m */; };
 		400E19F91AC71A3A0002F00C /* LCItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E19F81AC71A3A0002F00C /* LCItem.m */; };
 		400E19FC1AC725E60002F00C /* LCItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E19FB1AC725E60002F00C /* LCItemStore.m */; };
+		401192E31AC8AD160030B3A5 /* cardBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 401192E21AC8AD160030B3A5 /* cardBg.png */; };
+		401192E51AC8AD200030B3A5 /* cardBackBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 401192E41AC8AD200030B3A5 /* cardBackBg.png */; };
 		40BA23511AC72A67009757AC /* LCDictionaryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BA23501AC72A67009757AC /* LCDictionaryStore.m */; };
 		40BA23541AC72F4D009757AC /* LCAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BA23531AC72F4D009757AC /* LCAPI.m */; };
 		40BA23571AC7324D009757AC /* XMLItemsParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BA23561AC7324D009757AC /* XMLItemsParserDelegate.m */; };
@@ -25,7 +27,6 @@
 		40BA23691AC796A7009757AC /* learningBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BA23681AC796A7009757AC /* learningBg.png */; };
 		40BA236D1AC79AE3009757AC /* LCCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BA236B1AC79AE3009757AC /* LCCardViewController.m */; };
 		40BA236E1AC79AE3009757AC /* LCCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40BA236C1AC79AE3009757AC /* LCCardViewController.xib */; };
-		40BA23701AC7A02C009757AC /* cardBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BA236F1AC7A02C009757AC /* cardBg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		400E19F81AC71A3A0002F00C /* LCItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCItem.m; sourceTree = "<group>"; };
 		400E19FA1AC725E60002F00C /* LCItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCItemStore.h; sourceTree = "<group>"; };
 		400E19FB1AC725E60002F00C /* LCItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCItemStore.m; sourceTree = "<group>"; };
+		401192E21AC8AD160030B3A5 /* cardBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cardBg.png; path = ../../LCASSETS/cardBg.png; sourceTree = "<group>"; };
+		401192E41AC8AD200030B3A5 /* cardBackBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cardBackBg.png; path = ../../LCASSETS/cardBackBg.png; sourceTree = "<group>"; };
 		40BA234F1AC72A67009757AC /* LCDictionaryStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDictionaryStore.h; sourceTree = "<group>"; };
 		40BA23501AC72A67009757AC /* LCDictionaryStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDictionaryStore.m; sourceTree = "<group>"; };
 		40BA23521AC72F4D009757AC /* LCAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAPI.h; sourceTree = "<group>"; };
@@ -70,7 +73,6 @@
 		40BA236A1AC79AE3009757AC /* LCCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCCardViewController.h; sourceTree = "<group>"; };
 		40BA236B1AC79AE3009757AC /* LCCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCCardViewController.m; sourceTree = "<group>"; };
 		40BA236C1AC79AE3009757AC /* LCCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCCardViewController.xib; sourceTree = "<group>"; };
-		40BA236F1AC7A02C009757AC /* cardBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cardBg.png; path = ../../LCASSETS/cardBg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +96,8 @@
 		400E19BD1AC7144E0002F00C = {
 			isa = PBXGroup;
 			children = (
-				40BA236F1AC7A02C009757AC /* cardBg.png */,
+				401192E41AC8AD200030B3A5 /* cardBackBg.png */,
+				401192E21AC8AD160030B3A5 /* cardBg.png */,
 				40BA23681AC796A7009757AC /* learningBg.png */,
 				40BA23581AC7386F009757AC /* defaultItems.xml */,
 				400E19F21AC7163D0002F00C /* Default-568h@2x.png */,
@@ -249,11 +252,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40BA23701AC7A02C009757AC /* cardBg.png in Resources */,
+				401192E31AC8AD160030B3A5 /* cardBg.png in Resources */,
 				400E19DA1AC7144E0002F00C /* Images.xcassets in Resources */,
 				40BA23591AC7386F009757AC /* defaultItems.xml in Resources */,
 				40BA23691AC796A7009757AC /* learningBg.png in Resources */,
 				40BA236E1AC79AE3009757AC /* LCCardViewController.xib in Resources */,
+				401192E51AC8AD200030B3A5 /* cardBackBg.png in Resources */,
 				40BA23651AC77AC7009757AC /* LCLearningViewController.xib in Resources */,
 				400E19F31AC7163D0002F00C /* Default-568h@2x.png in Resources */,
 			);
