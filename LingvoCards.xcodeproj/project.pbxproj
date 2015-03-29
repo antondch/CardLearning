@@ -20,9 +20,9 @@
 		40BA23541AC72F4D009757AC /* LCAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BA23531AC72F4D009757AC /* LCAPI.m */; };
 		40BA23571AC7324D009757AC /* XMLItemsParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BA23561AC7324D009757AC /* XMLItemsParserDelegate.m */; };
 		40BA23591AC7386F009757AC /* defaultItems.xml in Resources */ = {isa = PBXBuildFile; fileRef = 40BA23581AC7386F009757AC /* defaultItems.xml */; };
-		40BA23601AC7738E009757AC /* learningBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BA235F1AC7738E009757AC /* learningBg.png */; };
 		40BA23641AC77AC7009757AC /* LCLearningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BA23621AC77AC7009757AC /* LCLearningViewController.m */; };
 		40BA23651AC77AC7009757AC /* LCLearningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40BA23631AC77AC7009757AC /* LCLearningViewController.xib */; };
+		40BA23691AC796A7009757AC /* learningBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BA23681AC796A7009757AC /* learningBg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,10 +60,10 @@
 		40BA23551AC7324D009757AC /* XMLItemsParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLItemsParserDelegate.h; sourceTree = "<group>"; };
 		40BA23561AC7324D009757AC /* XMLItemsParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLItemsParserDelegate.m; sourceTree = "<group>"; };
 		40BA23581AC7386F009757AC /* defaultItems.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = defaultItems.xml; path = ../../Downloads/defaultItems.xml; sourceTree = "<group>"; };
-		40BA235F1AC7738E009757AC /* learningBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = learningBg.png; path = ../../LCASSETS/learningBg.png; sourceTree = "<group>"; };
 		40BA23611AC77AC7009757AC /* LCLearningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLearningViewController.h; sourceTree = "<group>"; };
 		40BA23621AC77AC7009757AC /* LCLearningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLearningViewController.m; sourceTree = "<group>"; };
 		40BA23631AC77AC7009757AC /* LCLearningViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCLearningViewController.xib; sourceTree = "<group>"; };
+		40BA23681AC796A7009757AC /* learningBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = learningBg.png; path = ../../LCASSETS/learningBg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 		400E19BD1AC7144E0002F00C = {
 			isa = PBXGroup;
 			children = (
-				40BA235F1AC7738E009757AC /* learningBg.png */,
+				40BA23681AC796A7009757AC /* learningBg.png */,
 				40BA23581AC7386F009757AC /* defaultItems.xml */,
 				400E19F21AC7163D0002F00C /* Default-568h@2x.png */,
 				400E19C81AC7144E0002F00C /* LingvoCards */,
@@ -240,7 +240,7 @@
 			files = (
 				400E19DA1AC7144E0002F00C /* Images.xcassets in Resources */,
 				40BA23591AC7386F009757AC /* defaultItems.xml in Resources */,
-				40BA23601AC7738E009757AC /* learningBg.png in Resources */,
+				40BA23691AC796A7009757AC /* learningBg.png in Resources */,
 				40BA23651AC77AC7009757AC /* LCLearningViewController.xib in Resources */,
 				400E19F31AC7163D0002F00C /* Default-568h@2x.png in Resources */,
 			);
