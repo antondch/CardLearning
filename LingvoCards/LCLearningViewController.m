@@ -7,6 +7,7 @@
 //
 
 #import "LCLearningViewController.h"
+#import "LCCardViewController.h"
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
@@ -20,8 +21,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setNeedsStatusBarAppearanceUpdate];
-//    CGRect imageFrame = [[UIScreen mainScreen] bounds];
-//    self.bgImage.frame = imageFrame;
+    //test card
+    LCCardViewController *cardController = [[LCCardViewController alloc]init];
+    [self displayContentController:cardController];
+}
+
+- (void) displayContentController: (UIViewController*) content;
+{
+    [self addChildViewController:content];
+    content.view.frame = [self frameForContentController];
+    [self.view addSubview:content.view];
+    [content didMoveToParentViewController:self];
+}
+
+- (CGRect)frameForContentController{
+    CGRect frame = CGRectMake(0, 0, self.view.bounds.size.width-300, (self.view.bounds.size.width-300)*2.5);
+    return frame;
 }
 
 
@@ -34,14 +49,5 @@
     return UIStatusBarStyleLightContent;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

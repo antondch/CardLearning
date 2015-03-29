@@ -9,10 +9,15 @@
 #import "LCCardViewController.h"
 
 @interface LCCardViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *enLabel;
 
 @end
 
 @implementation LCCardViewController
+- (IBAction)soundButton:(id)sender {
+}
+- (IBAction)learnButton:(id)sender {
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

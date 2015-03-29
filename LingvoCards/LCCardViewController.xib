@@ -2,49 +2,61 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LCCardViewController"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LCCardViewController">
+            <connections>
+                <outlet property="enLabel" destination="msB-dN-Mif" id="Xbg-YP-MVl"/>
+                <outlet property="view" destination="Rri-Iy-Ot7" id="uZE-r1-mM9"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="Rri-Iy-Ot7">
+        <view autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="redraw" id="Rri-Iy-Ot7">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="XLl-bH-Es1">
-                    <rect key="frame" x="39" y="100" width="242" height="368"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="XLl-bH-Es1" secondAttribute="height" multiplier="64:97" id="UBd-FP-drd"/>
-                    </constraints>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgD-2P-gqW">
-                    <rect key="frame" x="138" y="392" width="46" height="30"/>
+                    <rect key="frame" x="137" y="78" width="46" height="30"/>
                     <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="learnButton:" destination="-1" eventType="touchUpInside" id="gWc-Zm-Jan"/>
+                    </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZM-cc-yin">
-                    <rect key="frame" x="138" y="146" width="46" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZM-cc-yin">
+                    <rect key="frame" x="137" y="425" width="46" height="30"/>
                     <state key="normal" title="Button">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="soundButton:" destination="-1" eventType="touchUpInside" id="TKV-kC-dKE"/>
+                    </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msB-dN-Mif">
-                    <rect key="frame" x="81" y="219" width="161" height="55"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msB-dN-Mif">
+                    <rect key="frame" x="137" y="241" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstAttribute="centerX" secondItem="XLl-bH-Es1" secondAttribute="centerX" id="82C-er-KKm"/>
-                <constraint firstItem="XLl-bH-Es1" firstAttribute="centerX" secondItem="MgD-2P-gqW" secondAttribute="centerX" constant="-0.5" id="8Sf-Fi-C4t"/>
-                <constraint firstItem="MgD-2P-gqW" firstAttribute="top" secondItem="XLl-bH-Es1" secondAttribute="bottom" constant="-76" id="l8S-6U-ZVy"/>
-                <constraint firstAttribute="centerY" secondItem="XLl-bH-Es1" secondAttribute="centerY" id="oc3-wb-xha"/>
-                <constraint firstAttribute="bottom" secondItem="XLl-bH-Es1" secondAttribute="bottom" constant="100" id="vcd-YY-Ur2"/>
-                <constraint firstItem="XLl-bH-Es1" firstAttribute="top" secondItem="Rri-Iy-Ot7" secondAttribute="top" constant="100" id="z2q-mZ-PgE"/>
+                <constraint firstAttribute="trailing" secondItem="XLl-bH-Es1" secondAttribute="trailing" id="3oR-vl-Mjn"/>
+                <constraint firstItem="XLl-bH-Es1" firstAttribute="centerX" secondItem="MgD-2P-gqW" secondAttribute="centerX" id="4E7-if-ulR"/>
+                <constraint firstItem="XLl-bH-Es1" firstAttribute="centerY" secondItem="msB-dN-Mif" secondAttribute="centerY" constant="32.5" id="848-Ra-yHw"/>
+                <constraint firstItem="XLl-bH-Es1" firstAttribute="centerX" secondItem="msB-dN-Mif" secondAttribute="centerX" constant="2" id="EIR-im-Ecj"/>
+                <constraint firstAttribute="bottom" secondItem="XLl-bH-Es1" secondAttribute="bottom" id="FUd-Ce-Msg"/>
+                <constraint firstItem="XLl-bH-Es1" firstAttribute="top" secondItem="Rri-Iy-Ot7" secondAttribute="top" id="Ncj-As-tYs"/>
+                <constraint firstItem="XLl-bH-Es1" firstAttribute="centerX" secondItem="yZM-cc-yin" secondAttribute="centerX" id="OK5-dD-Rup"/>
+                <constraint firstItem="XLl-bH-Es1" firstAttribute="top" secondItem="MgD-2P-gqW" secondAttribute="bottom" constant="-108" id="Zt1-A2-H4X"/>
+                <constraint firstItem="XLl-bH-Es1" firstAttribute="leading" secondItem="Rri-Iy-Ot7" secondAttribute="leading" id="ebz-01-hHf"/>
+                <constraint firstItem="yZM-cc-yin" firstAttribute="top" secondItem="XLl-bH-Es1" secondAttribute="bottom" constant="-143" id="mXl-M2-TxY"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-            <point key="canvasLocation" x="337" y="330"/>
+            <point key="canvasLocation" x="369" y="375"/>
         </view>
     </objects>
     <resources>

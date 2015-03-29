@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "LCAPI.h"
 #import "LCLearningViewController.h"
+#import "LCCardViewController.h"
 @interface AppDelegate ()
 
 @end
