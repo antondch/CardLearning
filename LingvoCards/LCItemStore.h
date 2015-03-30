@@ -12,5 +12,6 @@
 +(id)sharedStore;
 
 -(void)addNewItemWithEn:(NSString*) en transcription:(NSString*)transcription ru:(NSString*)ru;
-@property(nonatomic,readonly) NSArray *allItems;
+@property(nonatomic,readonly) NSArray *itemsForLearning;
+@property(nonatomic,readonly) NSArray *learnedItems;
 @end

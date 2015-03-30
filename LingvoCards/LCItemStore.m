@@ -15,7 +15,8 @@
 @property (nonatomic, strong) NSManagedObjectContext *context;
 @property (nonatomic, strong) NSManagedObjectModel *model;
 @property (strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
-@property (nonatomic, strong) NSMutableArray *privateItems;
+@property (nonatomic, strong) NSMutableArray *privateLearnedItems;
+@property (nonatomic, strong) NSMutableArray *privateItemsForLearning;
 @end
 @implementation LCItemStore
 
@@ -48,7 +49,7 @@
 #pragma mark - items manipulation
 
 -(void)loadAllItems{
-    if(!self.privateItems){
+    if(!self.privateItemsForLearning){
         NSFetchRequest *request = [[NSFetchRequest alloc]init];
         NSEntityDescription *ed = [NSEntityDescription entityForName:@"LCItem" inManagedObjectContext:self.context];
         request.entity = ed;
@@ -57,7 +58,7 @@
         if(!result){
             [NSException raise:@"Fetch failed" format:@"Reason: %@", [error localizedDescription] ];
         }
-        self.privateItems = [[NSMutableArray alloc]initWithArray:result];
+        self.privateItemsForLearning = [[NSMutableArray alloc]initWithArray:result];
     }
 }
 
@@ -66,11 +67,15 @@
     item.ru = ru;
     item.en = en;
     item.transcription = transcription;
-    [self.privateItems addObject:item];
+    [self.privateItemsForLearning addObject:item];
 }
 
-
--(NSArray*)allItems{
-    return self.privateItems;
+-(NSArray*)privateItemsForLearning{
+    return self.privateItemsForLearning;
 }
+
+-(NSArray*)learnedItems{
+    return self.privateItemsForLearning;
+}
+
 @end

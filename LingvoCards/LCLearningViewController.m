@@ -28,7 +28,7 @@
 
 - (void)createCards{
     self.cardControllers = [[NSMutableArray alloc]init];
-    for(id object in [[LCItemStore sharedStore]allItems]){
+    for(id object in [[LCItemStore sharedStore]itemsForLearning]){
         LCCardViewController *cardController = [[LCCardViewController alloc]init];
         LCItem *item = (LCItem*) object;
         cardController.item = item;

@@ -40,7 +40,7 @@
 #pragma mark - get items
 -(void)initResources:(NSString *)dictionary{
     LCItemStore *itemStore = [LCItemStore sharedStore];
-    if([[itemStore allItems]count]==0){
+    if([[itemStore itemsForLearning]count]==0){
     _parseDelegate = [[XMLItemsParserDelegate alloc]init];
     NSError *error;
     NSData *data = [NSData dataWithContentsOfFile:[self xmlPath] options:0 error:&error];
