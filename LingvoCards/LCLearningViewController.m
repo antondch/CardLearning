@@ -15,7 +15,7 @@
 
 @interface LCLearningViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *bgImage;
-
+@property (nonatomic,strong) NSMutableArray *cardControllers;
 @end
 
 @implementation LCLearningViewController
@@ -23,24 +23,32 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setNeedsStatusBarAppearanceUpdate];
-    //test card
-    LCCardViewController *cardController = [[LCCardViewController alloc]init];
-    LCItem *item = [[[LCItemStore sharedStore]allItems] lastObject];
-    cardController.item = item;
-    [self displayContentController:cardController];
+    [self createCards];
 }
 
-- (void) displayContentController: (UIViewController*) content;
+- (void)createCards{
+    self.cardControllers = [[NSMutableArray alloc]init];
+    for(id object in [[LCItemStore sharedStore]allItems]){
+        LCCardViewController *cardController = [[LCCardViewController alloc]init];
+        LCItem *item = (LCItem*) object;
+        cardController.item = item;
+        int order = [self.cardControllers count];
+        [self displayContentController:cardController order:order];
+        [self.cardControllers addObject:cardController];
+    }
+}
+
+- (void)displayContentController: (UIViewController*) content order:(int) order;
 {
     [self addChildViewController:content];
-    content.view.frame = [self frameForContentController];
+    content.view.frame = [self frameForContentControllerWithOrder:order];
     [self.view addSubview:content.view];
     [content didMoveToParentViewController:self];
 }
 
-- (CGRect)frameForContentController{
+- (CGRect)frameForContentControllerWithOrder:(int) order{
     
-    CGRect frame = CGRectMake(50, 50, self.view.bounds.size.width-200, (self.view.bounds.size.width-200)*1.5);
+    CGRect frame = CGRectMake(50, 50-order/2, self.view.bounds.size.width-200, (self.view.bounds.size.width-200)*1.5);
     return frame;
 }
 

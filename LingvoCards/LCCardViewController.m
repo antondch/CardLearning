@@ -11,16 +11,16 @@
 @interface LCCardViewController (){
     BOOL isRotated;
     CGPoint cardOutDistance;
+    int order;
 }
 @property (weak, nonatomic) IBOutlet UILabel *enLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *cardBackImage;
+
 //@property BOOL isRotated;
 
 @end
 
 @implementation LCCardViewController
-
-
 - (IBAction)soundButton:(id)sender {
 }
 - (IBAction)learnButton:(id)sender {
