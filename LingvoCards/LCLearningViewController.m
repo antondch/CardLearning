@@ -8,6 +8,8 @@
 
 #import "LCLearningViewController.h"
 #import "LCCardViewController.h"
+#import "LCItem.h"
+#import "LCItemStore.h"
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
@@ -23,6 +25,8 @@
     [self setNeedsStatusBarAppearanceUpdate];
     //test card
     LCCardViewController *cardController = [[LCCardViewController alloc]init];
+    LCItem *item = [[[LCItemStore sharedStore]allItems] lastObject];
+    cardController.item = item;
     [self displayContentController:cardController];
 }
 

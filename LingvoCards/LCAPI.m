@@ -52,6 +52,8 @@
         [strongSelf doneParse];
     };
     [parser parse];
+    }else{
+        [self sendCompleteInit];
     }
 }
 
@@ -62,6 +64,7 @@
         [itemStore addNewItemWithEn:itemArray[0] transcription:itemArray[1] ru:itemArray[2]];
     }
     NSLog(@"done parse");
+    [self sendCompleteInit];
 }
 
 -(void)sendCompleteInit{

@@ -8,14 +8,19 @@
 
 #import "LCCardViewController.h"
 
-@interface LCCardViewController ()
+@interface LCCardViewController (){
+    BOOL isRotated;
+    CGPoint cardOutDistance;
+}
 @property (weak, nonatomic) IBOutlet UILabel *enLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *cardBackImage;
-@property BOOL isRotated;
+//@property BOOL isRotated;
 
 @end
 
 @implementation LCCardViewController
+
+
 - (IBAction)soundButton:(id)sender {
 }
 - (IBAction)learnButton:(id)sender {
@@ -26,11 +31,11 @@
 
 - (void)rotateView{
     int direction = 1;
-    if(self.isRotated){
+    if(isRotated){
         direction = -1;
     }
     CATransform3D perspectiveTransform = CATransform3DIdentity;
-    perspectiveTransform.m34 = 1.0 / -400;
+    perspectiveTransform.m34 = 1.0 / -500;
     perspectiveTransform = CATransform3DRotate(perspectiveTransform,  direction*M_PI / 2, 0.0f, 1.0f, 0.0f);
     //     cardController.view.layer.anchorPoint = CGPointMake(0.0, 0.0);
     self.view.layer.zPosition=500;
@@ -38,15 +43,23 @@
     [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
         self.view.layer.transform = perspectiveTransform;
     } completion:^(BOOL finished) {
-        self.cardBackImage.hidden = self.isRotated;
+        self.cardBackImage.hidden = isRotated;
         CATransform3D originalPerspectiveTransform = CATransform3DRotate(perspectiveTransform,  M_PI / 2, 0.0f, 1.0f, 0.0f);
         //CATransform3DIdentity;
         [UIView animateWithDuration:0.5  delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
             self.view.layer.transform = originalPerspectiveTransform;
         }completion:^(BOOL finished) {
             self.view.layer.zPosition=0;
-            self.isRotated = !self.isRotated;
+            isRotated = !isRotated;
         }];
+    }];
+}
+
+-(void)flyOutView{
+    CATransform3D rotationTransform = CATransform3DMakeTranslation(cardOutDistance.x, cardOutDistance.y,0);
+    rotationTransform = CATransform3DRotate(rotationTransform,-M_PI/2, 0.0f, 0.0f, 0.1);
+    [UIView animateWithDuration:0.5 animations:^{
+        self.view.layer.transform = rotationTransform;
     }];
 }
 
@@ -55,22 +68,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.isRotated = NO;
+    self.enLabel.text = self.item.en;
+    isRotated = NO;
+    
+    CGSize appSize = [[UIScreen mainScreen] bounds].size;
+    CGSize cardSize = self.view.bounds.size;
+    cardOutDistance.x = -appSize.width/2-cardSize.height/2;
+    cardOutDistance.x = -appSize.width/2-cardSize.height/2;
+    cardOutDistance.y = appSize.height/2+cardSize.width/2;
+ 
     UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapRecognize:)];
     [self.view addGestureRecognizer:tapRecognizer];
-    // Do any additional setup after loading the view from its nib.
+    UISwipeGestureRecognizer *swipeRecognizer = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeRecognize:)];
+    swipeRecognizer.direction = UISwipeGestureRecognizerDirectionLeft;
+    [self.view addGestureRecognizer:swipeRecognizer];
 }
 
 - (void)tapRecognize:(UIGestureRecognizer*)gestureRecognizer{
     [self rotateView];
 }
 
-
-
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)swipeRecognize:(UIGestureRecognizer*)gestureRecognizer{
+    [self flyOutView];
 }
+
 @end

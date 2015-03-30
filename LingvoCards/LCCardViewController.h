@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LCItem.h"
 
 @interface LCCardViewController : UIViewController
-
+@property LCItem *item;
 @end
