@@ -50,26 +50,26 @@
 		400E19E21AC7144E0002F00C /* LingvoCardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LingvoCardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		400E19E71AC7144E0002F00C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		400E19E81AC7144E0002F00C /* LingvoCardsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LingvoCardsTests.m; sourceTree = "<group>"; };
-		400E19F21AC7163D0002F00C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		400E19F21AC7163D0002F00C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		400E19F41AC71A3A0002F00C /* LCDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDictionary.h; sourceTree = "<group>"; };
 		400E19F51AC71A3A0002F00C /* LCDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDictionary.m; sourceTree = "<group>"; };
 		400E19F71AC71A3A0002F00C /* LCItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCItem.h; sourceTree = "<group>"; };
 		400E19F81AC71A3A0002F00C /* LCItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCItem.m; sourceTree = "<group>"; };
 		400E19FA1AC725E60002F00C /* LCItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCItemStore.h; sourceTree = "<group>"; };
 		400E19FB1AC725E60002F00C /* LCItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCItemStore.m; sourceTree = "<group>"; };
-		401192E21AC8AD160030B3A5 /* cardBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cardBg.png; path = ../../LCASSETS/cardBg.png; sourceTree = "<group>"; };
-		401192E41AC8AD200030B3A5 /* cardBackBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cardBackBg.png; path = ../../LCASSETS/cardBackBg.png; sourceTree = "<group>"; };
+		401192E21AC8AD160030B3A5 /* cardBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cardBg.png; path = ../../../LCASSETS/cardBg.png; sourceTree = "<group>"; };
+		401192E41AC8AD200030B3A5 /* cardBackBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cardBackBg.png; path = ../../../LCASSETS/cardBackBg.png; sourceTree = "<group>"; };
 		40BA234F1AC72A67009757AC /* LCDictionaryStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDictionaryStore.h; sourceTree = "<group>"; };
 		40BA23501AC72A67009757AC /* LCDictionaryStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDictionaryStore.m; sourceTree = "<group>"; };
 		40BA23521AC72F4D009757AC /* LCAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAPI.h; sourceTree = "<group>"; };
 		40BA23531AC72F4D009757AC /* LCAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAPI.m; sourceTree = "<group>"; };
 		40BA23551AC7324D009757AC /* XMLItemsParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLItemsParserDelegate.h; sourceTree = "<group>"; };
 		40BA23561AC7324D009757AC /* XMLItemsParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLItemsParserDelegate.m; sourceTree = "<group>"; };
-		40BA23581AC7386F009757AC /* defaultItems.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = defaultItems.xml; path = ../../Downloads/defaultItems.xml; sourceTree = "<group>"; };
+		40BA23581AC7386F009757AC /* defaultItems.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = defaultItems.xml; path = ../../../Downloads/defaultItems.xml; sourceTree = "<group>"; };
 		40BA23611AC77AC7009757AC /* LCLearningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLearningViewController.h; sourceTree = "<group>"; };
 		40BA23621AC77AC7009757AC /* LCLearningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLearningViewController.m; sourceTree = "<group>"; };
 		40BA23631AC77AC7009757AC /* LCLearningViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCLearningViewController.xib; sourceTree = "<group>"; };
-		40BA23681AC796A7009757AC /* learningBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = learningBg.png; path = ../../LCASSETS/learningBg.png; sourceTree = "<group>"; };
+		40BA23681AC796A7009757AC /* learningBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = learningBg.png; path = ../../../LCASSETS/learningBg.png; sourceTree = "<group>"; };
 		40BA236A1AC79AE3009757AC /* LCCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCCardViewController.h; sourceTree = "<group>"; };
 		40BA236B1AC79AE3009757AC /* LCCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCCardViewController.m; sourceTree = "<group>"; };
 		40BA236C1AC79AE3009757AC /* LCCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCCardViewController.xib; sourceTree = "<group>"; };
@@ -96,11 +96,6 @@
 		400E19BD1AC7144E0002F00C = {
 			isa = PBXGroup;
 			children = (
-				401192E41AC8AD200030B3A5 /* cardBackBg.png */,
-				401192E21AC8AD160030B3A5 /* cardBg.png */,
-				40BA23681AC796A7009757AC /* learningBg.png */,
-				40BA23581AC7386F009757AC /* defaultItems.xml */,
-				400E19F21AC7163D0002F00C /* Default-568h@2x.png */,
 				400E19C81AC7144E0002F00C /* LingvoCards */,
 				400E19E51AC7144E0002F00C /* LingvoCardsTests */,
 				400E19C71AC7144E0002F00C /* Products */,
@@ -119,6 +114,7 @@
 		400E19C81AC7144E0002F00C /* LingvoCards */ = {
 			isa = PBXGroup;
 			children = (
+				401814161AC9792500FFA8F1 /* asset */,
 				400E19CD1AC7144E0002F00C /* AppDelegate.h */,
 				400E19CE1AC7144E0002F00C /* AppDelegate.m */,
 				400E19D91AC7144E0002F00C /* Images.xcassets */,
@@ -170,6 +166,18 @@
 				400E19E71AC7144E0002F00C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		401814161AC9792500FFA8F1 /* asset */ = {
+			isa = PBXGroup;
+			children = (
+				401192E41AC8AD200030B3A5 /* cardBackBg.png */,
+				401192E21AC8AD160030B3A5 /* cardBg.png */,
+				40BA23681AC796A7009757AC /* learningBg.png */,
+				40BA23581AC7386F009757AC /* defaultItems.xml */,
+				400E19F21AC7163D0002F00C /* Default-568h@2x.png */,
+			);
+			name = asset;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

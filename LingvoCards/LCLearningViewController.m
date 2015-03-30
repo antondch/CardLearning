@@ -28,14 +28,14 @@
 
 - (void)createCards{
     self.cardControllers = [[NSMutableArray alloc]init];
-    for(id object in [[LCItemStore sharedStore]itemsForLearning]){
+//    for(id object in [[LCItemStore sharedStore]itemsForLearning]){
         LCCardViewController *cardController = [[LCCardViewController alloc]init];
-        LCItem *item = (LCItem*) object;
+    LCItem *item = [[[LCItemStore sharedStore]itemsForLearning] lastObject]; //(LCItem*) object;
         cardController.item = item;
         int order = [self.cardControllers count];
         [self displayContentController:cardController order:order];
         [self.cardControllers addObject:cardController];
-    }
+//    }
 }
 
 - (void)displayContentController: (UIViewController*) content order:(int) order;

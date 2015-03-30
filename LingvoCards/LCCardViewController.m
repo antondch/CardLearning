@@ -7,6 +7,7 @@
 //
 
 #import "LCCardViewController.h"
+#import "LCItemStore.h"
 
 @interface LCCardViewController (){
     BOOL isRotated;
@@ -14,6 +15,7 @@
     int order;
 }
 @property (weak, nonatomic) IBOutlet UILabel *enLabel;
+
 @property (weak, nonatomic) IBOutlet UIImageView *cardBackImage;
 
 //@property BOOL isRotated;
@@ -24,7 +26,7 @@
 - (IBAction)soundButton:(id)sender {
 }
 - (IBAction)learnButton:(id)sender {
-
+    [[LCItemStore sharedStore]moveItemToLeaned:self.item];
 }
 
 #pragma mark - animation
@@ -60,6 +62,10 @@
     rotationTransform = CATransform3DRotate(rotationTransform,-M_PI/2, 0.0f, 0.0f, 0.1);
     [UIView animateWithDuration:0.5 animations:^{
         self.view.layer.transform = rotationTransform;
+    } completion:^(BOOL finished) {
+        if(self.discardBlock){
+            self.discardBlock();
+        }
     }];
 }
 

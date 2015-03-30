@@ -10,5 +10,6 @@
 #import "LCItem.h"
 
 @interface LCCardViewController : UIViewController
-@property LCItem *item;
+@property (nonatomic,weak) LCItem *item;
+@property (nonatomic,weak) void (^discardBlock)(void);
 @end

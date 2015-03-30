@@ -8,7 +8,6 @@
 
 #import "LCItemStore.h"
 #import "AppDelegate.h"
-#import "LCItem.h"
 
 @import CoreData;
 @interface LCItemStore()
