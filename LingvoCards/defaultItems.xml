@@ -1,0 +1,567 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Бегемот Бегемот</Author>
+  <LastAuthor>Stark</LastAuthor>
+  <Created>2014-09-05T08:18:39Z</Created>
+  <LastSaved>2014-09-05T08:21:02Z</LastSaved>
+  <Version>14.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>7755</WindowHeight>
+  <WindowWidth>20490</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:CharSet="204" x:Family="Swiss" ss:Size="11"
+    ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s16">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Лист1">
+  <Table ss:ExpandedColumnCount="3" ss:ExpandedRowCount="100" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Column ss:AutoFitWidth="0" ss:Width="103.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="94.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="186.75"/>
+   <Row>
+    <Cell><Data ss:Type="String">   the</Data></Cell>
+    <Cell><Data ss:Type="String">[ði:]</Data></Cell>
+    <Cell><Data ss:Type="String">Определённый артикль</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   be</Data></Cell>
+    <Cell><Data ss:Type="String">[bi:]</Data></Cell>
+    <Cell><Data ss:Type="String">быть, означать, стоить, находиться</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   and</Data></Cell>
+    <Cell><Data ss:Type="String">[ænd]</Data></Cell>
+    <Cell><Data ss:Type="String">и, а, но, плюс</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   of</Data></Cell>
+    <Cell><Data ss:Type="String">[ɔv]</Data></Cell>
+    <Cell><Data ss:Type="String">из, о, от</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   a</Data></Cell>
+    <Cell><Data ss:Type="String">[ə]</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">любой, один, каждый,  некий,  на</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   in</Data></Cell>
+    <Cell><Data ss:Type="String">[ɪn]</Data></Cell>
+    <Cell><Data ss:Type="String">в, у</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   to</Data></Cell>
+    <Cell><Data ss:Type="String">[tu:]</Data></Cell>
+    <Cell><Data ss:Type="String">к, в</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   have</Data></Cell>
+    <Cell><Data ss:Type="String">[hæv]</Data></Cell>
+    <Cell><Data ss:Type="String">иметь</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   it</Data></Cell>
+    <Cell><Data ss:Type="String">[ɪt]</Data></Cell>
+    <Cell><Data ss:Type="String">это</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   I</Data></Cell>
+    <Cell><Data ss:Type="String">[aɪ]</Data></Cell>
+    <Cell><Data ss:Type="String">я</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   that</Data></Cell>
+    <Cell><Data ss:Type="String">[ðæt]</Data></Cell>
+    <Cell><Data ss:Type="String">этот, это, эта</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   for</Data></Cell>
+    <Cell><Data ss:Type="String">[fɔ:]</Data></Cell>
+    <Cell><Data ss:Type="String">для, для того</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   you</Data></Cell>
+    <Cell><Data ss:Type="String">[ju:]</Data></Cell>
+    <Cell><Data ss:Type="String">вы, ты</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   he</Data></Cell>
+    <Cell><Data ss:Type="String">[hi:]</Data></Cell>
+    <Cell><Data ss:Type="String">он</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   with</Data></Cell>
+    <Cell><Data ss:Type="String">[wɪð]</Data></Cell>
+    <Cell><Data ss:Type="String">с, с помощью, из-за, при</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   on</Data></Cell>
+    <Cell><Data ss:Type="String">[ɔn]</Data></Cell>
+    <Cell><Data ss:Type="String">на, в, над</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   do</Data></Cell>
+    <Cell><Data ss:Type="String">[du:]</Data></Cell>
+    <Cell><Data ss:Type="String">делать, сделать</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   say</Data></Cell>
+    <Cell><Data ss:Type="String">[seɪ]</Data></Cell>
+    <Cell><Data ss:Type="String">говорить,сказать</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   this</Data></Cell>
+    <Cell><Data ss:Type="String">[ðɪs]</Data></Cell>
+    <Cell><Data ss:Type="String">это, так, этот</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   they</Data></Cell>
+    <Cell><Data ss:Type="String">[ðeɪ]</Data></Cell>
+    <Cell><Data ss:Type="String">они</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   at</Data></Cell>
+    <Cell><Data ss:Type="String">[æt]</Data></Cell>
+    <Cell><Data ss:Type="String">в, на, при, за</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   but</Data></Cell>
+    <Cell><Data ss:Type="String">[bʌt]</Data></Cell>
+    <Cell><Data ss:Type="String">но, только</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   we</Data></Cell>
+    <Cell><Data ss:Type="String">[wi:]</Data></Cell>
+    <Cell><Data ss:Type="String">мы</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   his</Data></Cell>
+    <Cell><Data ss:Type="String">[hɪz]</Data></Cell>
+    <Cell><Data ss:Type="String">его</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   from</Data></Cell>
+    <Cell><Data ss:Type="String">[frɔm]</Data></Cell>
+    <Cell><Data ss:Type="String">от,  из,  с</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   not</Data></Cell>
+    <Cell><Data ss:Type="String">[nɔt]</Data></Cell>
+    <Cell><Data ss:Type="String">не</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   by</Data></Cell>
+    <Cell><Data ss:Type="String">[baɪ]</Data></Cell>
+    <Cell><Data ss:Type="String">за, на, к</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   she</Data></Cell>
+    <Cell><Data ss:Type="String">[ʃi:]</Data></Cell>
+    <Cell><Data ss:Type="String">она</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   or</Data></Cell>
+    <Cell><Data ss:Type="String">[ɔ:]</Data></Cell>
+    <Cell><Data ss:Type="String">или, иначе</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   as</Data></Cell>
+    <Cell><Data ss:Type="String">[æz]</Data></Cell>
+    <Cell><Data ss:Type="String">как</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   what</Data></Cell>
+    <Cell><Data ss:Type="String">[wɔt]</Data></Cell>
+    <Cell><Data ss:Type="String">какой, что</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   go</Data></Cell>
+    <Cell><Data ss:Type="String">[ɡəu]</Data></Cell>
+    <Cell><Data ss:Type="String">идти, пойти</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   their</Data></Cell>
+    <Cell><Data ss:Type="String">[ðɛə]</Data></Cell>
+    <Cell><Data ss:Type="String">их</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   can</Data></Cell>
+    <Cell><Data ss:Type="String">[kæn]</Data></Cell>
+    <Cell><Data ss:Type="String">мочь, иметь право, банка</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   who</Data></Cell>
+    <Cell><Data ss:Type="String">[hu:]</Data></Cell>
+    <Cell><Data ss:Type="String">кто, который</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   get</Data></Cell>
+    <Cell><Data ss:Type="String">[ɡet]</Data></Cell>
+    <Cell><Data ss:Type="String">получать</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   if</Data></Cell>
+    <Cell><Data ss:Type="String">[ɪf]</Data></Cell>
+    <Cell><Data ss:Type="String">если, ли</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   would</Data></Cell>
+    <Cell><Data ss:Type="String">[wɪl]</Data></Cell>
+    <Cell><Data ss:Type="String">быть, хотеть</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   her</Data></Cell>
+    <Cell><Data ss:Type="String">[hə:]</Data></Cell>
+    <Cell><Data ss:Type="String">её</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   all</Data></Cell>
+    <Cell><Data ss:Type="String">[ɔ:l]</Data></Cell>
+    <Cell><Data ss:Type="String">все, весь, целый</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   my</Data></Cell>
+    <Cell><Data ss:Type="String">[maɪ]</Data></Cell>
+    <Cell><Data ss:Type="String">мой</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   make</Data></Cell>
+    <Cell><Data ss:Type="String">[meɪk]</Data></Cell>
+    <Cell><Data ss:Type="String">делать, выполнять</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   about</Data></Cell>
+    <Cell><Data ss:Type="String">[əˈbaut]</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">о, при, около</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   know</Data></Cell>
+    <Cell><Data ss:Type="String">[nəu]</Data></Cell>
+    <Cell><Data ss:Type="String">знать, узнавать</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   will</Data></Cell>
+    <Cell><Data ss:Type="String">[wɪl]</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">быть, хотеть</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   up</Data></Cell>
+    <Cell><Data ss:Type="String">[ʌp]</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">наверх</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   one</Data></Cell>
+    <Cell><Data ss:Type="String">[wʌn]</Data></Cell>
+    <Cell><Data ss:Type="String">один, единственный</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   time</Data></Cell>
+    <Cell><Data ss:Type="String">[taɪm]</Data></Cell>
+    <Cell><Data ss:Type="String">время</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   there</Data></Cell>
+    <Cell><Data ss:Type="String">[ðɛə]</Data></Cell>
+    <Cell><Data ss:Type="String">там, туда</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   year</Data></Cell>
+    <Cell><Data ss:Type="String">[jə:]</Data></Cell>
+    <Cell><Data ss:Type="String">год</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   so</Data></Cell>
+    <Cell><Data ss:Type="String">[səu]</Data></Cell>
+    <Cell><Data ss:Type="String">таким образом, так</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   think</Data></Cell>
+    <Cell><Data ss:Type="String">[θɪŋk]</Data></Cell>
+    <Cell><Data ss:Type="String">думать, полагать</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   when</Data></Cell>
+    <Cell><Data ss:Type="String">[wen]</Data></Cell>
+    <Cell><Data ss:Type="String">когда</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   which</Data></Cell>
+    <Cell><Data ss:Type="String">[wɪtʃ]</Data></Cell>
+    <Cell><Data ss:Type="String">который</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   them</Data></Cell>
+    <Cell><Data ss:Type="String">[ðeɪ]</Data></Cell>
+    <Cell><Data ss:Type="String">они</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   some</Data></Cell>
+    <Cell><Data ss:Type="String">[sʌm]</Data></Cell>
+    <Cell><Data ss:Type="String">некоторые, немного</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   me</Data></Cell>
+    <Cell><Data ss:Type="String">[mi:]</Data></Cell>
+    <Cell><Data ss:Type="String">меня</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   people</Data></Cell>
+    <Cell><Data ss:Type="String">[ˈpi:pl]</Data></Cell>
+    <Cell><Data ss:Type="String">люди </Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   take</Data></Cell>
+    <Cell><Data ss:Type="String">[teɪk]</Data></Cell>
+    <Cell><Data ss:Type="String">брать, получать</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   out</Data></Cell>
+    <Cell><Data ss:Type="String">[aut]</Data></Cell>
+    <Cell><Data ss:Type="String">вне, за пределами</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   into</Data></Cell>
+    <Cell><Data ss:Type="String">[ˈɪntu]</Data></Cell>
+    <Cell><Data ss:Type="String">в, внутрь</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   just</Data></Cell>
+    <Cell><Data ss:Type="String">[dʒʌst]</Data></Cell>
+    <Cell><Data ss:Type="String">только</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   see</Data></Cell>
+    <Cell><Data ss:Type="String">[si:]</Data></Cell>
+    <Cell><Data ss:Type="String">видеть, смотреть</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   him</Data></Cell>
+    <Cell><Data ss:Type="String">[hɪm]</Data></Cell>
+    <Cell><Data ss:Type="String">его</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   your</Data></Cell>
+    <Cell><Data ss:Type="String">[jɔ:]</Data></Cell>
+    <Cell><Data ss:Type="String">ваш, твой</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   come</Data></Cell>
+    <Cell><Data ss:Type="String">[kʌm]</Data></Cell>
+    <Cell><Data ss:Type="String">приходить, приезжать</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   could</Data></Cell>
+    <Cell><Data ss:Type="String">[kud]</Data></Cell>
+    <Cell><Data ss:Type="String">может, мог</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   now</Data></Cell>
+    <Cell><Data ss:Type="String">[nau]</Data></Cell>
+    <Cell><Data ss:Type="String">сейчас, теперь</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   than</Data></Cell>
+    <Cell><Data ss:Type="String">[ðæn]</Data></Cell>
+    <Cell><Data ss:Type="String">чем</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   like</Data></Cell>
+    <Cell><Data ss:Type="String">[laɪk]</Data></Cell>
+    <Cell><Data ss:Type="String">любить, нравиться, подобный</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   other</Data></Cell>
+    <Cell><Data ss:Type="String">[ˈʌðə]</Data></Cell>
+    <Cell><Data ss:Type="String">другой, другие</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   how</Data></Cell>
+    <Cell><Data ss:Type="String">[hau]</Data></Cell>
+    <Cell><Data ss:Type="String">как</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   then</Data></Cell>
+    <Cell><Data ss:Type="String">[ðen]</Data></Cell>
+    <Cell><Data ss:Type="String">потом</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   its</Data></Cell>
+    <Cell><Data ss:Type="String">[ɪts]</Data></Cell>
+    <Cell><Data ss:Type="String">его</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   our</Data></Cell>
+    <Cell><Data ss:Type="String">[ˈauə]</Data></Cell>
+    <Cell><Data ss:Type="String">наш</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   two</Data></Cell>
+    <Cell><Data ss:Type="String">[tu:]</Data></Cell>
+    <Cell><Data ss:Type="String">два</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   more</Data></Cell>
+    <Cell><Data ss:Type="String">[mɔ:]</Data></Cell>
+    <Cell><Data ss:Type="String">больше</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   these</Data></Cell>
+    <Cell><Data ss:Type="String">[ði:z]</Data></Cell>
+    <Cell><Data ss:Type="String">эти</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   want</Data></Cell>
+    <Cell><Data ss:Type="String">[wɔnt]</Data></Cell>
+    <Cell><Data ss:Type="String">хотеть, желать</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   way</Data></Cell>
+    <Cell><Data ss:Type="String">[weɪ]</Data></Cell>
+    <Cell><Data ss:Type="String">путь, способ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   look</Data></Cell>
+    <Cell><Data ss:Type="String">[luk]</Data></Cell>
+    <Cell><Data ss:Type="String">смотреть,выглядеть</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   first</Data></Cell>
+    <Cell><Data ss:Type="String">[fɜːst]</Data></Cell>
+    <Cell><Data ss:Type="String">сначала</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   also</Data></Cell>
+    <Cell><Data ss:Type="String">[ˈɔːlsəʊ]</Data></Cell>
+    <Cell><Data ss:Type="String">также</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   new</Data></Cell>
+    <Cell><Data ss:Type="String">[njuː]</Data></Cell>
+    <Cell><Data ss:Type="String">новый</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   because</Data></Cell>
+    <Cell><Data ss:Type="String">[bɪˈkɒz]</Data></Cell>
+    <Cell><Data ss:Type="String">потому что</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   day</Data></Cell>
+    <Cell><Data ss:Type="String">[deɪ]</Data></Cell>
+    <Cell><Data ss:Type="String">день</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   more</Data></Cell>
+    <Cell><Data ss:Type="String">[mɔː]</Data></Cell>
+    <Cell><Data ss:Type="String">еще</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   use</Data></Cell>
+    <Cell><Data ss:Type="String">[juːz]</Data></Cell>
+    <Cell><Data ss:Type="String">использовать</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   no</Data></Cell>
+    <Cell><Data ss:Type="String">[nəʊ]</Data></Cell>
+    <Cell><Data ss:Type="String">нет</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   man</Data></Cell>
+    <Cell><Data ss:Type="String">[mæn]</Data></Cell>
+    <Cell><Data ss:Type="String">человек</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   find</Data></Cell>
+    <Cell><Data ss:Type="String">[faɪnd]</Data></Cell>
+    <Cell><Data ss:Type="String">найти</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   here</Data></Cell>
+    <Cell><Data ss:Type="String">[hɪə]</Data></Cell>
+    <Cell><Data ss:Type="String">здесь</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   thing</Data></Cell>
+    <Cell><Data ss:Type="String">[θɪŋ]</Data></Cell>
+    <Cell><Data ss:Type="String">вещь</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   give</Data></Cell>
+    <Cell><Data ss:Type="String">[gɪv]</Data></Cell>
+    <Cell><Data ss:Type="String">дать</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   many</Data></Cell>
+    <Cell><Data ss:Type="String">[ˈmɛni]</Data></Cell>
+    <Cell><Data ss:Type="String">многие</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   well</Data></Cell>
+    <Cell><Data ss:Type="String">[wɛl]</Data></Cell>
+    <Cell><Data ss:Type="String">хорошо</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   only</Data></Cell>
+    <Cell><Data ss:Type="String">[ˈəʊnli]</Data></Cell>
+    <Cell><Data ss:Type="String">только</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   those</Data></Cell>
+    <Cell><Data ss:Type="String">[ðəʊz]</Data></Cell>
+    <Cell><Data ss:Type="String">те</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   tell</Data></Cell>
+    <Cell><Data ss:Type="String">[tɛl]</Data></Cell>
+    <Cell><Data ss:Type="String">сказать</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">   one</Data></Cell>
+    <Cell><Data ss:Type="String">[wʌn]</Data></Cell>
+    <Cell><Data ss:Type="String">один</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Selected/>
+   <TopRowVisible>84</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>45</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+     <RangeSelection>R46C3:R47C3</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
