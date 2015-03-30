@@ -49,28 +49,57 @@
 #pragma mark - items manipulation
 
 -(void)loadAllItems{
-    if(!self.privateItemsForLearning){
+    if(!_privateItemsForLearning){
         NSFetchRequest *request = [[NSFetchRequest alloc]init];
         NSEntityDescription *ed = [NSEntityDescription entityForName:@"LCItem" inManagedObjectContext:self.context];
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isLearned == %@", @"NO"];
         request.entity = ed;
+        request.predicate = predicate;
         NSError *error;
         NSArray *result = [self.context executeFetchRequest:request error:&error];
         if(!result){
             [NSException raise:@"Fetch failed" format:@"Reason: %@", [error localizedDescription] ];
         }
-        self.privateItemsForLearning = [[NSMutableArray alloc]initWithArray:result];
+        _privateItemsForLearning = [[NSMutableArray alloc]initWithArray:result];
     }
+    if(!_privateLearnedItems){
+        NSFetchRequest *request = [[NSFetchRequest alloc]init];
+        NSEntityDescription *ed = [NSEntityDescription entityForName:@"LCItem" inManagedObjectContext:self.context];
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isLearned == %@", @"YES"];
+        request.entity = ed;
+        request.predicate = predicate;
+        NSError *error;
+        NSArray *result = [self.context executeFetchRequest:request error:&error];
+        if(!result){
+            [NSException raise:@"Fetch failed" format:@"Reason: %@", [error localizedDescription] ];
+        }
+        _privateLearnedItems = [[NSMutableArray alloc]initWithArray:result];
+    }
+
 }
 
 -(void)addNewItemWithEn:(NSString *)en transcription:(NSString *)transcription ru:(NSString *)ru{
     LCItem *item = [NSEntityDescription insertNewObjectForEntityForName:@"LCItem" inManagedObjectContext:self.context];
     item.ru = ru;
     item.en = en;
+    item.isLearned = NO;
     item.transcription = transcription;
     [self.privateItemsForLearning addObject:item];
 }
 
--(NSArray*)privateItemsForLearning{
+-(void)moveItemToLearning:(LCItem*)item{
+    [self.privateItemsForLearning addObject:item];
+    [self.privateLearnedItems removeObject:item];
+    item.isLearned = NO;
+}
+
+-(void)moveItemToLeaned:(LCItem*)item{
+    [self.privateItemsForLearning removeObject:item];
+    [self.privateLearnedItems addObject:item];
+    item.isLearned = YES;
+}
+
+-(NSArray*)itemsForLearning{
     return self.privateItemsForLearning;
 }
 

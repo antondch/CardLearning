@@ -17,7 +17,7 @@
 @property (nonatomic, retain) NSString * en;
 @property (nonatomic, retain) NSString * transcription;
 @property (nonatomic, retain) NSString * ruUser;
-@property (nonatomic, retain) NSNumber * isLearned;
+@property BOOL isLearned;
 @property (nonatomic, retain) LCDictionary *dictionary;
 
 @end
