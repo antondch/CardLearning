@@ -135,9 +135,7 @@
 				40BA23611AC77AC7009757AC /* LCLearningViewController.h */,
 				40BA23621AC77AC7009757AC /* LCLearningViewController.m */,
 				40BA23631AC77AC7009757AC /* LCLearningViewController.xib */,
-				40BA236A1AC79AE3009757AC /* LCCardViewController.h */,
-				40BA236B1AC79AE3009757AC /* LCCardViewController.m */,
-				40BA236C1AC79AE3009757AC /* LCCardViewController.xib */,
+				40103EF41ACAB4AD00CC5A97 /* cards */,
 			);
 			path = LingvoCards;
 			sourceTree = "<group>";
@@ -166,6 +164,16 @@
 				400E19E71AC7144E0002F00C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40103EF41ACAB4AD00CC5A97 /* cards */ = {
+			isa = PBXGroup;
+			children = (
+				40BA236A1AC79AE3009757AC /* LCCardViewController.h */,
+				40BA236B1AC79AE3009757AC /* LCCardViewController.m */,
+				40BA236C1AC79AE3009757AC /* LCCardViewController.xib */,
+			);
+			name = cards;
 			sourceTree = "<group>";
 		};
 		401814161AC9792500FFA8F1 /* asset */ = {

@@ -60,11 +60,14 @@
 -(void)flyOutView{
     CATransform3D rotationTransform = CATransform3DMakeTranslation(cardOutDistance.x, cardOutDistance.y,0);
     rotationTransform = CATransform3DRotate(rotationTransform,-M_PI/2, 0.0f, 0.0f, 0.1);
+    if ([_delegate respondsToSelector:@selector(cardWillRemoved:)]){
+        [_delegate performSelector:@selector(cardWillRemoved:)withObject:self];
+    }
     [UIView animateWithDuration:0.5 animations:^{
         self.view.layer.transform = rotationTransform;
     } completion:^(BOOL finished) {
-        if(self.discardBlock){
-            self.discardBlock();
+        if ([_delegate respondsToSelector:@selector(cardDidRemoved:)]){
+            [_delegate performSelector:@selector(cardDidRemoved:)withObject:self];   
         }
     }];
 }

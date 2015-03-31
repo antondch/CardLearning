@@ -8,8 +8,17 @@
 
 #import <UIKit/UIKit.h>
 #import "LCItem.h"
+#import "LCCardViewControllerDelegate.h"
+@class LCCardViewController;
+
+@protocol LCCardViewControllerDelegate <NSObject>
+@optional
+-(void)cardWillRemoved:(LCCardViewController*)cardController;
+-(void)cardDidRemoved:(LCCardViewController*)cardController;
+@end
 
 @interface LCCardViewController : UIViewController
-@property (nonatomic,weak) LCItem *item;
-@property (nonatomic,weak) void (^discardBlock)(void);
+@property (nonatomic, weak) LCItem *item;
+@property (nonatomic) BOOL isActive;
+@property (nonatomic, weak) id<LCCardViewControllerDelegate> delegate;
 @end

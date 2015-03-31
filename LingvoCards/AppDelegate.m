@@ -20,12 +20,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     LCAPI *api = [LCAPI defaultAPI];
+    __weak AppDelegate *weakSelf = self;
     api.initComplete = ^{
+            __strong AppDelegate *strongSelf = weakSelf;
         LCLearningViewController *learningViewController = [[LCLearningViewController alloc]init];
-        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-        [self.window setRootViewController: learningViewController];
-        [self.window makeKeyAndVisible];
-        self.window.backgroundColor = [UIColor clearColor];
+        strongSelf.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        [strongSelf.window setRootViewController: learningViewController];
+        [strongSelf.window makeKeyAndVisible];
+        strongSelf.window.backgroundColor = [UIColor clearColor];
     };
     [api initResources:@"default"];
     return YES;

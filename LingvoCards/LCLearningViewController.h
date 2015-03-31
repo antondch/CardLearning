@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LCCardViewController.h"
 
-@interface LCLearningViewController : UIViewController
+@interface LCLearningViewController : UIViewController<LCCardViewControllerDelegate>
 @end
