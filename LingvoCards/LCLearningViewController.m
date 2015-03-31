@@ -39,29 +39,28 @@
 - (void)createCards{
     self.cardControllers = [[NSMutableArray alloc]init];
     int cardsCount = 6;
-    if (cardsCount>(int)[[[LCItemStore sharedStore]itemsForLearning]count]) {
-        cardsCount = (int)[[[LCItemStore sharedStore]itemsForLearning]count];
+    NSArray *items = [[LCItemStore sharedStore]itemsForLearning];
+    int itemsCount = [items count];
+    if (cardsCount>itemsCount) {
+        cardsCount = itemsCount;
     }
     for(int i =0; i<cardsCount; i++){
-        [self addCard];
+        [self addCardWithItem:(LCItem*)items[i]];
     }
     LCCardViewController *cc = [self.cardControllers lastObject];
     self.currentController = cc;
 }
 
-- (void)addCard{
+- (void)addCardWithItem:(LCItem*)item{
     LCCardViewController *cardController = [[LCCardViewController alloc]init];
-    LCItem *item = [[[LCItemStore sharedStore]itemsForLearning] lastObject];
     int order = (int)[self.cardControllers count];
     cardController.item = item;
     cardController.isActive = NO;
     [self.cardControllers addObject:cardController];
     [self displayContentCardController:cardController order:order];
-//    self.currentController = cardController;
 }
 
 -(void)removeCard:(LCCardViewController*)cardController{
-
         [cardController removeFromParentViewController];
         [cardController.view removeFromSuperview];
 }
@@ -91,11 +90,15 @@
 #pragma mark - cards controller delegate
 
 -(void)cardWillRemoved:(LCCardViewController*)cardController{
-    if([[[LCItemStore sharedStore] itemsForLearning]count]>0){
-        [self addCard];
+    [self.cardControllers removeObject:cardController];
+    NSArray *items = [[LCItemStore sharedStore] itemsForLearning];
+    int itemsCount = [items count];
+    int cardsOnTable = [self.cardControllers count];
+    if([items count]>cardsOnTable){
+        [self addCardWithItem:items[itemsCount-1-cardsOnTable]];
     }
-           [self.cardControllers removeObject:cardController];
     if([self.cardControllers count]>0){
+        
         self.currentController = [self.cardControllers lastObject];
     }
 }
