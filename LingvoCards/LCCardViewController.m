@@ -100,6 +100,7 @@
 }
 
 - (void)swipeRecognize:(UIGestureRecognizer*)gestureRecognizer{
+    [[LCItemStore sharedStore] skipItem:self.item];
     [self flyOutView];
 }
 
