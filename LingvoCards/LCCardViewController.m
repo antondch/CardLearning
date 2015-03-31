@@ -30,6 +30,34 @@
     [self flyOutView];
 }
 
+-(void)setIsActive:(BOOL)isActive{
+    self.view.userInteractionEnabled = isActive;
+    _isActive = isActive;
+    self.enLabel.hidden = !isActive;
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+//    self.view.userInteractionEnabled = NO;
+    self.enLabel.text = self.item.en;
+    NSLog(@"text: %@",self.enLabel.text);
+        NSLog(@"en: %@",self.item.en);
+    isRotated = NO;
+    
+    CGSize appSize = [[UIScreen mainScreen] bounds].size;
+    CGSize cardSize = self.view.bounds.size;
+    cardOutDistance.x = -appSize.width/2-cardSize.height/2;
+    cardOutDistance.x = -appSize.width/2-cardSize.height/2;
+    cardOutDistance.y = appSize.height/2+cardSize.width/2;
+    
+    UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapRecognize:)];
+    [self.view addGestureRecognizer:tapRecognizer];
+    UISwipeGestureRecognizer *swipeRecognizer = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeRecognize:)];
+    swipeRecognizer.direction = UISwipeGestureRecognizerDirectionLeft;
+    [self.view addGestureRecognizer:swipeRecognizer];
+}
+
+
 #pragma mark - animation
 
 - (void)rotateView{
@@ -75,26 +103,7 @@
     }];
 }
 
-
 #pragma mark - gesture recognize
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    self.enLabel.text = self.item.en;
-    isRotated = NO;
-    
-    CGSize appSize = [[UIScreen mainScreen] bounds].size;
-    CGSize cardSize = self.view.bounds.size;
-    cardOutDistance.x = -appSize.width/2-cardSize.height/2;
-    cardOutDistance.x = -appSize.width/2-cardSize.height/2;
-    cardOutDistance.y = appSize.height/2+cardSize.width/2;
- 
-    UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapRecognize:)];
-    [self.view addGestureRecognizer:tapRecognizer];
-    UISwipeGestureRecognizer *swipeRecognizer = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeRecognize:)];
-    swipeRecognizer.direction = UISwipeGestureRecognizerDirectionLeft;
-    [self.view addGestureRecognizer:swipeRecognizer];
-}
 
 - (void)tapRecognize:(UIGestureRecognizer*)gestureRecognizer{
     [self rotateView];

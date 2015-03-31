@@ -45,6 +45,8 @@
     for(int i =0; i<cardsCount; i++){
         [self addCard];
     }
+    LCCardViewController *cc = [self.cardControllers lastObject];
+    self.currentController = cc;
 }
 
 - (void)addCard{
@@ -52,9 +54,10 @@
     LCItem *item = [[[LCItemStore sharedStore]itemsForLearning] lastObject];
     int order = (int)[self.cardControllers count];
     cardController.item = item;
+    cardController.isActive = NO;
     [self.cardControllers addObject:cardController];
     [self displayContentCardController:cardController order:order];
-    self.currentController = cardController;
+//    self.currentController = cardController;
 }
 
 -(void)removeCard:(LCCardViewController*)cardController{
@@ -64,9 +67,6 @@
 }
 
 -(void)setCurrentController:(LCCardViewController *)currentController{
-    if(_currentController){
-        _currentController.isActive = NO;
-    }
     _currentController = currentController;
     currentController.isActive = YES;
     currentController.delegate = self;
@@ -90,17 +90,20 @@
 
 #pragma mark - cards controller delegate
 
--(void)cardWillRemoved:(id)cardController{
-    [self addCard];
+-(void)cardWillRemoved:(LCCardViewController*)cardController{
+    if([[[LCItemStore sharedStore] itemsForLearning]count]>0){
+        [self addCard];
+        self.currentController = [self.cardControllers lastObject];
+    }
     if([self.cardControllers count]>0){
        [self.cardControllers removeObject:cardController];
     }
-    if([self.cardControllers count]>0){
-       self.currentController = [self.cardControllers lastObject];
-    }
+//    if([self.cardControllers count]>0){
+//       self.currentController = [self.cardControllers lastObject];
+//    }
 }
 
--(void)cardDidRemoved:(id)cardController{
+-(void)cardDidRemoved:(LCCardViewController*)cardController{
     [self removeCard:cardController];
 }
 
