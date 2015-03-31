@@ -58,7 +58,7 @@
 }
 
 -(void)removeCard:(LCCardViewController*)cardController{
-        [self.cardControllers removeObject:cardController];
+
         [cardController removeFromParentViewController];
         [cardController.view removeFromSuperview];
 }
@@ -91,8 +91,12 @@
 #pragma mark - cards controller delegate
 
 -(void)cardWillRemoved:(id)cardController{
+    [self addCard];
     if([self.cardControllers count]>0){
-        self.currentController = [self.cardControllers lastObject];
+       [self.cardControllers removeObject:cardController];
+    }
+    if([self.cardControllers count]>0){
+       self.currentController = [self.cardControllers lastObject];
     }
 }
 

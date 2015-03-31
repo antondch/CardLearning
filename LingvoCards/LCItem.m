@@ -17,6 +17,7 @@
 @dynamic transcription;
 @dynamic ruUser;
 @dynamic isLearned;
+@dynamic wasKeeked;
 @dynamic dictionary;
 
 @end

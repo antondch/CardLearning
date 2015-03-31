@@ -11,10 +11,11 @@
         <attribute name="ru" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="ruUser" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="transcription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wasKeeked" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
         <relationship name="dictionary" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LCDictionary" inverseName="items" inverseEntity="LCDictionary" syncable="YES"/>
     </entity>
     <elements>
         <element name="LCDictionary" positionX="0" positionY="0" width="128" height="90"/>
-        <element name="LCItem" positionX="0" positionY="0" width="128" height="135"/>
+        <element name="LCItem" positionX="0" positionY="0" width="128" height="150"/>
     </elements>
 </model>

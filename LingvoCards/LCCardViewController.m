@@ -27,11 +27,13 @@
 }
 - (IBAction)learnButton:(id)sender {
     [[LCItemStore sharedStore]moveItemToLeaned:self.item];
+    [self flyOutView];
 }
 
 #pragma mark - animation
 
 - (void)rotateView{
+    self.item.wasKeeked = YES;
     int direction = 1;
     if(isRotated){
         direction = -1;
@@ -67,7 +69,7 @@
         self.view.layer.transform = rotationTransform;
     } completion:^(BOOL finished) {
         if ([_delegate respondsToSelector:@selector(cardDidRemoved:)]){
-            [_delegate performSelector:@selector(cardDidRemoved:)withObject:self];   
+            [_delegate performSelector:@selector(cardDidRemoved:)withObject:self];
         }
     }];
 }

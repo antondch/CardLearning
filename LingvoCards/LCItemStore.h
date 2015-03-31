@@ -13,6 +13,7 @@
 +(id)sharedStore;
 -(void)moveItemToLearning:(LCItem*)item;
 -(void)moveItemToLeaned:(LCItem*)item;
+-(void)skipItem:(LCItem*)card;
 -(void)addNewItemWithEn:(NSString*) en transcription:(NSString*)transcription ru:(NSString*)ru;
 @property(nonatomic,readonly) NSArray *itemsForLearning;
 @property(nonatomic,readonly) NSArray *learnedItems;

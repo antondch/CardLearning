@@ -18,6 +18,8 @@
 @property (nonatomic, retain) NSString * transcription;
 @property (nonatomic, retain) NSString * ruUser;
 @property BOOL isLearned;
+@property BOOL wasKeeked;
+
 @property (nonatomic, retain) LCDictionary *dictionary;
 
 @end

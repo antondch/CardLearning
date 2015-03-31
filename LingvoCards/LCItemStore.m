@@ -86,6 +86,17 @@
     [self.privateItemsForLearning addObject:item];
 }
 
+-(void)skipItem:(LCItem*)card{
+    [self.privateItemsForLearning removeObject:card];
+    if(card.wasKeeked){
+        int count = (int)[self.privateItemsForLearning count];
+            int position = count - count/5;
+        [self. privateItemsForLearning insertObject:card atIndex:position];
+    }else{
+        [self. privateItemsForLearning insertObject:card atIndex:0];
+    }
+}
+
 -(void)moveItemToLearning:(LCItem*)item{
     [self.privateItemsForLearning addObject:item];
     [self.privateLearnedItems removeObject:item];
