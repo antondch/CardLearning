@@ -93,14 +93,11 @@
 -(void)cardWillRemoved:(LCCardViewController*)cardController{
     if([[[LCItemStore sharedStore] itemsForLearning]count]>0){
         [self addCard];
+    }
+           [self.cardControllers removeObject:cardController];
+    if([self.cardControllers count]>0){
         self.currentController = [self.cardControllers lastObject];
     }
-    if([self.cardControllers count]>0){
-       [self.cardControllers removeObject:cardController];
-    }
-//    if([self.cardControllers count]>0){
-//       self.currentController = [self.cardControllers lastObject];
-//    }
 }
 
 -(void)cardDidRemoved:(LCCardViewController*)cardController{
