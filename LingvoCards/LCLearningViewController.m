@@ -83,8 +83,8 @@
 }
 
 - (CGRect)frameForContentControllerWithOrder:(int) order{
-    
-    CGRect frame = CGRectMake(50, 50-order/2, self.view.bounds.size.width-200, (self.view.bounds.size.width-200)*1.5);
+    CGSize mainSize = [UIScreen mainScreen].bounds.size;
+    CGRect frame = CGRectMake(50, 50-order/2, mainSize.width*0.75, mainSize.width*0.75*1.5);
     return frame;
 }
 

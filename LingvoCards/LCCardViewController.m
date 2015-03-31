@@ -60,6 +60,7 @@
 }
 
 -(void)flyOutView{
+    self.view.layer.zPosition=10;
     CATransform3D rotationTransform = CATransform3DMakeTranslation(cardOutDistance.x, cardOutDistance.y,0);
     rotationTransform = CATransform3DRotate(rotationTransform,-M_PI/2, 0.0f, 0.0f, 0.1);
     if ([_delegate respondsToSelector:@selector(cardWillRemoved:)]){
