@@ -31,9 +31,9 @@
 }
 
 -(void)setIsActive:(BOOL)isActive{
-//    self.view.userInteractionEnabled = isActive;
+    self.view.userInteractionEnabled = isActive;
     _isActive = isActive;
-//    self.enLabel.hidden = !isActive;
+    self.enLabel.hidden = !isActive;
 }
 
 - (void)viewDidLoad {
