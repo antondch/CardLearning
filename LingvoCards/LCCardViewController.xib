@@ -9,7 +9,7 @@
             <connections>
                 <outlet property="cardBackImage" destination="k0d-KT-Pza" id="ZNz-n8-4Vb"/>
                 <outlet property="editBtn" destination="n0A-sI-7R7" id="J8W-zr-QaD"/>
-                <outlet property="enLabel" destination="msB-dN-Mif" id="Xbg-YP-MVl"/>
+                <outlet property="enLabel" destination="NmR-tV-FQh" id="lrP-cQ-GE4"/>
                 <outlet property="learnBtn" destination="MgD-2P-gqW" id="KhI-uy-jof"/>
                 <outlet property="soundBtn" destination="yZM-cc-yin" id="ojG-32-Tyt"/>
                 <outlet property="transcriptionLabel" destination="nGt-dZ-1nJ" id="h4s-nh-19e"/>
@@ -21,10 +21,10 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="XLl-bH-Es1">
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardBackBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="k0d-KT-Pza">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                 </imageView>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardBackBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="k0d-KT-Pza">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="XLl-bH-Es1">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                 </imageView>
                 <button contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZM-cc-yin" userLabel="soundBtn">
@@ -41,12 +41,6 @@
                         <action selector="soundButton:" destination="-1" eventType="touchUpInside" id="xhZ-qk-yxl"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" verticalHuggingPriority="252" horizontalCompressionResistancePriority="700" verticalCompressionResistancePriority="701" text="englishText" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msB-dN-Mif">
-                    <rect key="frame" x="10" y="239" width="300" height="34"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                    <color key="textColor" red="0.50980392156862742" green="0.49019607843137253" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <button contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgD-2P-gqW">
                     <rect key="frame" x="100" y="518" width="120" height="30"/>
                     <constraints>
@@ -61,13 +55,13 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="transText" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGt-dZ-1nJ">
-                    <rect key="frame" x="10" y="273" width="300" height="21"/>
+                    <rect key="frame" x="10" y="276" width="300" height="15"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.50980392156862742" green="0.49019607843137253" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0A-sI-7R7" userLabel="editBtn">
-                    <rect key="frame" x="135" y="283" width="50" height="50"/>
+                    <rect key="frame" x="135" y="288" width="50" height="50"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="50" id="R69-wx-3tW"/>
                         <constraint firstAttribute="height" constant="50" id="rH1-3v-1be"/>
@@ -79,19 +73,26 @@
                         <action selector="editBtn:" destination="-1" eventType="touchUpInside" id="TWw-0e-yK9"/>
                     </connections>
                 </button>
+                <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" alwaysBounceVertical="YES" scrollEnabled="NO" text="123" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NmR-tV-FQh" customClass="ResizeableTExtView">
+                    <rect key="frame" x="10" y="235" width="300" height="33"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" red="0.50980392156862742" green="0.49019607843137253" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="centerX" secondItem="yZM-cc-yin" secondAttribute="centerX" id="2bM-LD-gaH"/>
-                <constraint firstItem="nGt-dZ-1nJ" firstAttribute="top" secondItem="msB-dN-Mif" secondAttribute="bottom" id="4V3-a4-5N7"/>
+                <constraint firstItem="nGt-dZ-1nJ" firstAttribute="top" secondItem="NmR-tV-FQh" secondAttribute="bottom" constant="8" id="6oD-o1-TO1"/>
                 <constraint firstAttribute="bottom" secondItem="MgD-2P-gqW" secondAttribute="bottom" constant="20" id="7jv-qM-f9Y"/>
                 <constraint firstItem="k0d-KT-Pza" firstAttribute="width" secondItem="XLl-bH-Es1" secondAttribute="width" id="8BW-Zc-dNB"/>
-                <constraint firstAttribute="trailing" secondItem="msB-dN-Mif" secondAttribute="trailing" constant="10" id="ALS-7O-7jY"/>
-                <constraint firstItem="msB-dN-Mif" firstAttribute="leading" secondItem="Rri-Iy-Ot7" secondAttribute="leading" constant="10" id="JTg-SN-0qv"/>
+                <constraint firstItem="n0A-sI-7R7" firstAttribute="top" secondItem="NmR-tV-FQh" secondAttribute="bottom" constant="20" id="9oy-kW-dTq"/>
+                <constraint firstItem="NmR-tV-FQh" firstAttribute="leading" secondItem="Rri-Iy-Ot7" secondAttribute="leading" constant="10" id="IvH-gT-ZiF"/>
                 <constraint firstAttribute="trailing" secondItem="nGt-dZ-1nJ" secondAttribute="trailing" constant="10" id="LpH-Xt-0iv"/>
                 <constraint firstAttribute="trailing" secondItem="XLl-bH-Es1" secondAttribute="trailing" id="NgK-MO-1Sx"/>
-                <constraint firstAttribute="centerX" secondItem="msB-dN-Mif" secondAttribute="centerX" id="Pkc-Jv-gb7"/>
+                <constraint firstAttribute="centerY" secondItem="NmR-tV-FQh" secondAttribute="centerY" constant="33" id="PHm-Jx-ig0"/>
                 <constraint firstAttribute="centerX" secondItem="n0A-sI-7R7" secondAttribute="centerX" id="RUZ-31-Mbs"/>
                 <constraint firstItem="k0d-KT-Pza" firstAttribute="height" secondItem="XLl-bH-Es1" secondAttribute="height" id="U9C-hz-ZQh"/>
                 <constraint firstItem="yZM-cc-yin" firstAttribute="top" secondItem="Rri-Iy-Ot7" secondAttribute="top" constant="20" id="WeX-Bz-W69"/>
@@ -102,10 +103,11 @@
                 <constraint firstAttribute="centerY" secondItem="XLl-bH-Es1" secondAttribute="centerY" id="hUi-Fq-mnk"/>
                 <constraint firstAttribute="centerX" secondItem="k0d-KT-Pza" secondAttribute="centerX" id="lwM-fd-IAQ"/>
                 <constraint firstAttribute="centerX" secondItem="nGt-dZ-1nJ" secondAttribute="centerX" id="mq8-qu-Teh"/>
+                <constraint firstAttribute="centerX" secondItem="NmR-tV-FQh" secondAttribute="centerX" id="n32-Ic-OFv"/>
                 <constraint firstAttribute="centerY" secondItem="k0d-KT-Pza" secondAttribute="centerY" id="nOn-2P-a3X"/>
+                <constraint firstAttribute="trailing" secondItem="NmR-tV-FQh" secondAttribute="trailing" constant="10" id="oNK-bw-vaN"/>
                 <constraint firstAttribute="bottom" secondItem="XLl-bH-Es1" secondAttribute="bottom" id="q6P-Or-yeS"/>
                 <constraint firstAttribute="centerY" secondItem="nGt-dZ-1nJ" secondAttribute="centerY" id="t2P-d4-XsU"/>
-                <constraint firstItem="n0A-sI-7R7" firstAttribute="top" secondItem="msB-dN-Mif" secondAttribute="bottom" constant="10" id="wXg-K8-VHe"/>
                 <constraint firstItem="XLl-bH-Es1" firstAttribute="leading" secondItem="Rri-Iy-Ot7" secondAttribute="leading" id="x7H-u2-aDH"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
