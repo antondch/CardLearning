@@ -16,7 +16,8 @@
 }
 @property (weak, nonatomic) IBOutlet UIButton *soundBtn;
 @property (weak, nonatomic) IBOutlet UIButton *learnBtn;
-@property (weak, nonatomic) IBOutlet UILabel *enLabel;
+@property (weak, nonatomic) IBOutlet UITextView *enLabel;
+
 @property (weak, nonatomic) IBOutlet UILabel *transcriptionLabel;
 
 @property (weak, nonatomic) IBOutlet UIImageView *cardBackImage;
@@ -47,11 +48,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//        self.view.layer.shadowColor = [UIColor grayColor].CGColor;
-//        self.view.layer.shadowOffset = CGSizeMake(0, 1);
-//        self.view.layer.shadowOpacity = 1;
-//        self.view.layer.shadowRadius = 1.0;
-//        self.view.clipsToBounds = NO;
+        self.view.layer.shadowColor = [UIColor grayColor].CGColor;
+        self.view.layer.shadowOffset = CGSizeMake(0, 1);
+        self.view.layer.shadowOpacity = 1;
+        self.view.layer.shadowRadius = 1.0;
+        self.view.clipsToBounds = NO;
     
     self.enLabel.text =  self.item.en;
     self.transcriptionLabel.text = self.item.transcription;

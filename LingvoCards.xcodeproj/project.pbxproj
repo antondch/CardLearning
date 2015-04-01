@@ -23,6 +23,7 @@
 		401814221AC97A3100FFA8F1 /* cardBackBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 401814211AC97A3100FFA8F1 /* cardBackBg.png */; };
 		401814241AC97A3900FFA8F1 /* learningBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 401814231AC97A3900FFA8F1 /* learningBg.png */; };
 		4035CCAE1ACBA27600A4180F /* editBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4035CCAD1ACBA27600A4180F /* editBtn.png */; };
+		4035CCB11ACBB3A700A4180F /* ResizeableTExtView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4035CCB01ACBB3A700A4180F /* ResizeableTExtView.m */; };
 		40BA23511AC72A67009757AC /* LCDictionaryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BA23501AC72A67009757AC /* LCDictionaryStore.m */; };
 		40BA23541AC72F4D009757AC /* LCAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BA23531AC72F4D009757AC /* LCAPI.m */; };
 		40BA23571AC7324D009757AC /* XMLItemsParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BA23561AC7324D009757AC /* XMLItemsParserDelegate.m */; };
@@ -67,6 +68,8 @@
 		401814211AC97A3100FFA8F1 /* cardBackBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardBackBg.png; sourceTree = "<group>"; };
 		401814231AC97A3900FFA8F1 /* learningBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = learningBg.png; sourceTree = "<group>"; };
 		4035CCAD1ACBA27600A4180F /* editBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = editBtn.png; sourceTree = "<group>"; };
+		4035CCAF1ACBB3A700A4180F /* ResizeableTExtView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResizeableTExtView.h; sourceTree = "<group>"; };
+		4035CCB01ACBB3A700A4180F /* ResizeableTExtView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResizeableTExtView.m; sourceTree = "<group>"; };
 		40BA234F1AC72A67009757AC /* LCDictionaryStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDictionaryStore.h; sourceTree = "<group>"; };
 		40BA23501AC72A67009757AC /* LCDictionaryStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDictionaryStore.m; sourceTree = "<group>"; };
 		40BA23521AC72F4D009757AC /* LCAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAPI.h; sourceTree = "<group>"; };
@@ -178,6 +181,8 @@
 				40BA236A1AC79AE3009757AC /* LCCardViewController.h */,
 				40BA236B1AC79AE3009757AC /* LCCardViewController.m */,
 				40BA236C1AC79AE3009757AC /* LCCardViewController.xib */,
+				4035CCAF1ACBB3A700A4180F /* ResizeableTExtView.h */,
+				4035CCB01ACBB3A700A4180F /* ResizeableTExtView.m */,
 			);
 			name = cards;
 			sourceTree = "<group>";
@@ -310,6 +315,7 @@
 				40BA236D1AC79AE3009757AC /* LCCardViewController.m in Sources */,
 				400E19F91AC71A3A0002F00C /* LCItem.m in Sources */,
 				40BA23641AC77AC7009757AC /* LCLearningViewController.m in Sources */,
+				4035CCB11ACBB3A700A4180F /* ResizeableTExtView.m in Sources */,
 				40BA23541AC72F4D009757AC /* LCAPI.m in Sources */,
 				40BA23571AC7324D009757AC /* XMLItemsParserDelegate.m in Sources */,
 				400E19CC1AC7144E0002F00C /* main.m in Sources */,
