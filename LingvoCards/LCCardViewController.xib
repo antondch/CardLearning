@@ -9,7 +9,9 @@
             <connections>
                 <outlet property="cardBackImage" destination="k0d-KT-Pza" id="ZNz-n8-4Vb"/>
                 <outlet property="enLabel" destination="msB-dN-Mif" id="Xbg-YP-MVl"/>
+                <outlet property="learnBtn" destination="MgD-2P-gqW" id="KhI-uy-jof"/>
                 <outlet property="ruText" destination="9Yv-lC-0jg" id="5rO-yB-g1e"/>
+                <outlet property="soundBtn" destination="yZM-cc-yin" id="ojG-32-Tyt"/>
                 <outlet property="transcriptionLabel" destination="nGt-dZ-1nJ" id="h4s-nh-19e"/>
                 <outlet property="view" destination="Rri-Iy-Ot7" id="uZE-r1-mM9"/>
             </connections>
@@ -24,9 +26,6 @@
                 </imageView>
                 <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardBackBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="k0d-KT-Pza">
                     <rect key="frame" x="0.0" y="5" width="320" height="558"/>
-                    <accessibility key="accessibilityConfiguration">
-                        <accessibilityTraits key="traits" none="YES" image="YES" notEnabled="YES"/>
-                    </accessibility>
                 </imageView>
                 <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZM-cc-yin" userLabel="soundBtn">
                     <rect key="frame" x="135" y="50" width="50" height="50"/>
@@ -39,7 +38,7 @@
                     </state>
                     <state key="disabled" image="soundBtn.png"/>
                     <connections>
-                        <action selector="soundButton:" destination="-1" eventType="touchUpInside" id="TKV-kC-dKE"/>
+                        <action selector="soundButton:" destination="-1" eventType="touchUpInside" id="xhZ-qk-yxl"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" verticalHuggingPriority="252" horizontalCompressionResistancePriority="700" verticalCompressionResistancePriority="701" text="englishText" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msB-dN-Mif">
