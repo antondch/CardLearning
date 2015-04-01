@@ -47,6 +47,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//        self.view.layer.shadowColor = [UIColor grayColor].CGColor;
+//        self.view.layer.shadowOffset = CGSizeMake(0, 1);
+//        self.view.layer.shadowOpacity = 1;
+//        self.view.layer.shadowRadius = 1.0;
+//        self.view.clipsToBounds = NO;
+    
     self.enLabel.text =  self.item.en;
     self.transcriptionLabel.text = self.item.transcription;
     [self.enLabel updateConstraints];
@@ -106,6 +112,12 @@
         self.transcriptionLabel.hidden = !self.isRotated;
         self.soundBtn.hidden = !self.isRotated;
         self.editBtn.hidden = self.isRotated;
+        if(self.isRotated){
+            self.enLabel.text = self.item.en;
+        }else{
+            self.enLabel.text = self.item.ru;
+        }
+           
         CATransform3D originalPerspectiveTransform = CATransform3DRotate(perspectiveTransform,  M_PI / 2, 0.0f, 1.0f, 0.0f);
         //CATransform3DIdentity;
         [UIView animateWithDuration:0.5  delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
