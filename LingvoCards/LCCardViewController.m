@@ -20,8 +20,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *transcriptionLabel;
 
 @property (weak, nonatomic) IBOutlet UIImageView *cardBackImage;
-@property (weak, nonatomic) IBOutlet UITextField *ruText;
 @property (strong, nonatomic) UISwipeGestureRecognizer *swipeRecognizer;
+@property (weak, nonatomic) IBOutlet UIButton *editBtn;
 @property (nonatomic) BOOL isRotated;
 
 @end
@@ -32,6 +32,9 @@
 - (IBAction)learnButton:(id)sender {
     [[LCItemStore sharedStore]moveItemToLeaned:self.item];
     [self flyOutView];
+}
+- (IBAction)editBtn:(id)sender {
+    
 }
 
 -(void)setIsActive:(BOOL)isActive{
@@ -48,6 +51,12 @@
     self.transcriptionLabel.text = self.item.transcription;
     [self.enLabel updateConstraints];
     self.isRotated = NO;
+    
+    self.cardBackImage.hidden = YES;
+    CATransform3D itemsRevertTransform = CATransform3DIdentity;
+    itemsRevertTransform = CATransform3DRotate(itemsRevertTransform, M_PI , 0.0f, 1.0f, 0.0f);
+    self.editBtn.layer.transform = itemsRevertTransform;
+    self.editBtn.hidden = YES;
     
     CGSize appSize = [[UIScreen mainScreen] bounds].size;
     CGSize cardSize = self.view.bounds.size;
@@ -96,6 +105,7 @@
         self.learnBtn.layer.transform = itemsRevertTransform;
         self.transcriptionLabel.hidden = !self.isRotated;
         self.soundBtn.hidden = !self.isRotated;
+        self.editBtn.hidden = self.isRotated;
         CATransform3D originalPerspectiveTransform = CATransform3DRotate(perspectiveTransform,  M_PI / 2, 0.0f, 1.0f, 0.0f);
         //CATransform3DIdentity;
         [UIView animateWithDuration:0.5  delay:0 options:UIViewAnimationOptionCurveLinear animations:^{

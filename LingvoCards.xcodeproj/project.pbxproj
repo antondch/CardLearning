@@ -22,6 +22,7 @@
 		401814201AC97A2A00FFA8F1 /* cardBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 4018141F1AC97A2A00FFA8F1 /* cardBg.png */; };
 		401814221AC97A3100FFA8F1 /* cardBackBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 401814211AC97A3100FFA8F1 /* cardBackBg.png */; };
 		401814241AC97A3900FFA8F1 /* learningBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 401814231AC97A3900FFA8F1 /* learningBg.png */; };
+		4035CCAE1ACBA27600A4180F /* editBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4035CCAD1ACBA27600A4180F /* editBtn.png */; };
 		40BA23511AC72A67009757AC /* LCDictionaryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BA23501AC72A67009757AC /* LCDictionaryStore.m */; };
 		40BA23541AC72F4D009757AC /* LCAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BA23531AC72F4D009757AC /* LCAPI.m */; };
 		40BA23571AC7324D009757AC /* XMLItemsParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BA23561AC7324D009757AC /* XMLItemsParserDelegate.m */; };
@@ -65,6 +66,7 @@
 		4018141F1AC97A2A00FFA8F1 /* cardBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardBg.png; sourceTree = "<group>"; };
 		401814211AC97A3100FFA8F1 /* cardBackBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardBackBg.png; sourceTree = "<group>"; };
 		401814231AC97A3900FFA8F1 /* learningBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = learningBg.png; sourceTree = "<group>"; };
+		4035CCAD1ACBA27600A4180F /* editBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = editBtn.png; sourceTree = "<group>"; };
 		40BA234F1AC72A67009757AC /* LCDictionaryStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDictionaryStore.h; sourceTree = "<group>"; };
 		40BA23501AC72A67009757AC /* LCDictionaryStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDictionaryStore.m; sourceTree = "<group>"; };
 		40BA23521AC72F4D009757AC /* LCAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAPI.h; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 		401814161AC9792500FFA8F1 /* asset */ = {
 			isa = PBXGroup;
 			children = (
+				4035CCAD1ACBA27600A4180F /* editBtn.png */,
 				40074AEF1ACB87030090C94E /* btnBg.png */,
 				40074AED1ACB7B3F0090C94E /* soundBtn.png */,
 				4018141F1AC97A2A00FFA8F1 /* cardBg.png */,
@@ -278,6 +281,7 @@
 				400E19DA1AC7144E0002F00C /* Images.xcassets in Resources */,
 				40074AEE1ACB7B3F0090C94E /* soundBtn.png in Resources */,
 				401814241AC97A3900FFA8F1 /* learningBg.png in Resources */,
+				4035CCAE1ACBA27600A4180F /* editBtn.png in Resources */,
 				40BA236E1AC79AE3009757AC /* LCCardViewController.xib in Resources */,
 				40BA23651AC77AC7009757AC /* LCLearningViewController.xib in Resources */,
 				4018141E1AC979EB00FFA8F1 /* defaultItems.xml in Resources */,
