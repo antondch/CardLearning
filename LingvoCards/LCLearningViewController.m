@@ -40,7 +40,7 @@
     self.cardControllers = [[NSMutableArray alloc]init];
     int cardsCount = 6;
     NSArray *items = [[LCItemStore sharedStore]itemsForLearning];
-    int itemsCount = [items count];
+    int itemsCount = (int)[items count];
     if (cardsCount>itemsCount) {
         cardsCount = itemsCount;
     }
@@ -83,7 +83,7 @@
 
 - (CGRect)frameForContentControllerWithOrder:(int) order{
     CGSize mainSize = [UIScreen mainScreen].bounds.size;
-    CGRect frame = CGRectMake(50, 50-order/2, mainSize.width*0.75, mainSize.width*0.75*1.5);
+    CGRect frame = CGRectMake(mainSize.width/2-mainSize.width/2*0.75, mainSize.height/2-mainSize.width/2*0.75*1.5-order/2, mainSize.width*0.75, mainSize.width*0.75*1.5);
     return frame;
 }
 
@@ -92,13 +92,12 @@
 -(void)cardWillRemoved:(LCCardViewController*)cardController{
     [self.cardControllers removeObject:cardController];
     NSArray *items = [[LCItemStore sharedStore] itemsForLearning];
-    int itemsCount = [items count];
-    int cardsOnTable = [self.cardControllers count];
+    int itemsCount = (int)[items count];
+    int cardsOnTable = (int)[self.cardControllers count];
     if([items count]>cardsOnTable){
         [self addCardWithItem:items[itemsCount-1-cardsOnTable]];
     }
     if([self.cardControllers count]>0){
-        
         self.currentController = [self.cardControllers lastObject];
     }
 }

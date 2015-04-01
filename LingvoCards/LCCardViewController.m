@@ -44,13 +44,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.view.userInteractionEnabled = NO;
     self.enLabel.text =  self.item.en;
     self.transcriptionLabel.text = self.item.transcription;
     [self.enLabel updateConstraints];
-    NSLog(@"text: %@",self.enLabel.text);
-        NSLog(@"en: %@",self.item.en);
-        NSLog(@"transcription: %@",self.item.transcription);
     self.isRotated = NO;
     
     CGSize appSize = [[UIScreen mainScreen] bounds].size;
@@ -67,7 +63,7 @@
 }
 
 
-#pragma mark - rotation
+#pragma mark - rotate card
 
 - (void)setIsRotated:(BOOL)isRotated{
     _isRotated = isRotated;
@@ -110,6 +106,8 @@
         }];
     }];
 }
+
+#pragma mark - remove card
 
 -(void)flyOutView{
     int direction = 1;
