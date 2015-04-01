@@ -20,11 +20,16 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="XLl-bH-Es1">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZM-cc-yin">
-                    <rect key="frame" x="137" y="70" width="46" height="30"/>
-                    <state key="normal" title="Button">
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZM-cc-yin">
+                    <rect key="frame" x="135" y="50" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="7IE-MR-9s0"/>
+                        <constraint firstAttribute="width" constant="50" id="lBE-NE-cia"/>
+                    </constraints>
+                    <state key="normal" image="soundBtn.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <state key="disabled" image="soundBtn.png"/>
                     <connections>
                         <action selector="soundButton:" destination="-1" eventType="touchUpInside" id="TKV-kC-dKE"/>
                     </connections>
@@ -32,11 +37,11 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="englishText" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msB-dN-Mif">
                     <rect key="frame" x="117" y="254" width="86" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgD-2P-gqW">
-                    <rect key="frame" x="129" y="455" width="63" height="30"/>
+                    <rect key="frame" x="129" y="488" width="63" height="30"/>
                     <state key="normal" title="Выучено"/>
                     <connections>
                         <action selector="learnButton:" destination="-1" eventType="touchUpInside" id="gWc-Zm-Jan"/>
@@ -54,11 +59,11 @@
             <constraints>
                 <constraint firstAttribute="centerX" secondItem="yZM-cc-yin" secondAttribute="centerX" id="2bM-LD-gaH"/>
                 <constraint firstItem="XLl-bH-Es1" firstAttribute="height" secondItem="k0d-KT-Pza" secondAttribute="height" id="3ED-iv-jTl"/>
-                <constraint firstAttribute="bottom" secondItem="MgD-2P-gqW" secondAttribute="bottom" constant="83" id="7jv-qM-f9Y"/>
+                <constraint firstAttribute="bottom" secondItem="MgD-2P-gqW" secondAttribute="bottom" constant="50" id="7jv-qM-f9Y"/>
                 <constraint firstAttribute="trailing" secondItem="XLl-bH-Es1" secondAttribute="trailing" id="NgK-MO-1Sx"/>
                 <constraint firstAttribute="centerX" secondItem="msB-dN-Mif" secondAttribute="centerX" id="Pkc-Jv-gb7"/>
                 <constraint firstItem="XLl-bH-Es1" firstAttribute="width" secondItem="k0d-KT-Pza" secondAttribute="width" id="TtM-oX-WmF"/>
-                <constraint firstItem="yZM-cc-yin" firstAttribute="top" secondItem="Rri-Iy-Ot7" secondAttribute="top" constant="70" id="WeX-Bz-W69"/>
+                <constraint firstItem="yZM-cc-yin" firstAttribute="top" secondItem="Rri-Iy-Ot7" secondAttribute="top" constant="50" id="WeX-Bz-W69"/>
                 <constraint firstAttribute="centerX" secondItem="MgD-2P-gqW" secondAttribute="centerX" id="cPg-Ms-5Gr"/>
                 <constraint firstAttribute="centerX" secondItem="XLl-bH-Es1" secondAttribute="centerX" id="cqk-gS-1Uk"/>
                 <constraint firstItem="XLl-bH-Es1" firstAttribute="top" secondItem="Rri-Iy-Ot7" secondAttribute="top" id="gpT-j1-xc2"/>
@@ -76,5 +81,6 @@
     <resources>
         <image name="cardBackBg.png" width="502" height="760"/>
         <image name="cardBg.png" width="502" height="760"/>
+        <image name="soundBtn.png" width="124" height="124"/>
     </resources>
 </document>
