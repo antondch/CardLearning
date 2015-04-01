@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *transcriptionLabel;
 
 @property (weak, nonatomic) IBOutlet UIImageView *cardBackImage;
+@property (weak, nonatomic) IBOutlet UITextField *ruText;
 
 //@property BOOL isRotated;
 
@@ -80,6 +81,9 @@
         self.view.layer.transform = perspectiveTransform;
     } completion:^(BOOL finished) {
         self.cardBackImage.hidden = isRotated;
+        CATransform3D itemsRevertTransform = CATransform3DIdentity;
+        itemsRevertTransform = CATransform3DRotate(self.enLabel.layer.transform, direction*M_PI , 0.0f, 1.0f, 0.0f);
+        self.enLabel.layer.transform = itemsRevertTransform;
         CATransform3D originalPerspectiveTransform = CATransform3DRotate(perspectiveTransform,  M_PI / 2, 0.0f, 1.0f, 0.0f);
         //CATransform3DIdentity;
         [UIView animateWithDuration:0.5  delay:0 options:UIViewAnimationOptionCurveLinear animations:^{

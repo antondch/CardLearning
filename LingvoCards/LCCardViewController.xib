@@ -9,6 +9,7 @@
             <connections>
                 <outlet property="cardBackImage" destination="k0d-KT-Pza" id="ZNz-n8-4Vb"/>
                 <outlet property="enLabel" destination="msB-dN-Mif" id="Xbg-YP-MVl"/>
+                <outlet property="ruText" destination="9Yv-lC-0jg" id="5rO-yB-g1e"/>
                 <outlet property="transcriptionLabel" destination="nGt-dZ-1nJ" id="h4s-nh-19e"/>
                 <outlet property="view" destination="Rri-Iy-Ot7" id="uZE-r1-mM9"/>
             </connections>
@@ -21,7 +22,13 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="XLl-bH-Es1">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                 </imageView>
-                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZM-cc-yin">
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardBackBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="k0d-KT-Pza">
+                    <rect key="frame" x="0.0" y="5" width="320" height="558"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" none="YES" image="YES" notEnabled="YES"/>
+                    </accessibility>
+                </imageView>
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZM-cc-yin" userLabel="soundBtn">
                     <rect key="frame" x="135" y="50" width="50" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="7IE-MR-9s0"/>
@@ -54,18 +61,17 @@
                         <action selector="learnButton:" destination="-1" eventType="touchUpInside" id="gWc-Zm-Jan"/>
                     </connections>
                 </button>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardBackBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="k0d-KT-Pza">
-                    <rect key="frame" x="0.0" y="5" width="320" height="558"/>
-                    <accessibility key="accessibilityConfiguration">
-                        <accessibilityTraits key="traits" none="YES" image="YES" notEnabled="YES"/>
-                    </accessibility>
-                </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="transText" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGt-dZ-1nJ">
                     <rect key="frame" x="10" y="273" width="300" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.50980392156862742" green="0.49019607843137253" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Yv-lC-0jg">
+                    <rect key="frame" x="112" y="323" width="97" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
