@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		40074AEE1ACB7B3F0090C94E /* soundBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 40074AED1ACB7B3F0090C94E /* soundBtn.png */; };
+		40074AF01ACB87030090C94E /* btnBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 40074AEF1ACB87030090C94E /* btnBg.png */; };
 		400E19CC1AC7144E0002F00C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E19CB1AC7144E0002F00C /* main.m */; };
 		400E19CF1AC7144E0002F00C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E19CE1AC7144E0002F00C /* AppDelegate.m */; };
 		400E19D21AC7144E0002F00C /* LingvoCards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 400E19D01AC7144E0002F00C /* LingvoCards.xcdatamodeld */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		40074AED1ACB7B3F0090C94E /* soundBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = soundBtn.png; sourceTree = "<group>"; };
+		40074AEF1ACB87030090C94E /* btnBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnBg.png; sourceTree = "<group>"; };
 		400E19C61AC7144E0002F00C /* LingvoCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LingvoCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		400E19CA1AC7144E0002F00C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		400E19CB1AC7144E0002F00C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 		401814161AC9792500FFA8F1 /* asset */ = {
 			isa = PBXGroup;
 			children = (
+				40074AEF1ACB87030090C94E /* btnBg.png */,
 				40074AED1ACB7B3F0090C94E /* soundBtn.png */,
 				4018141F1AC97A2A00FFA8F1 /* cardBg.png */,
 				401814231AC97A3900FFA8F1 /* learningBg.png */,
@@ -278,6 +281,7 @@
 				40BA236E1AC79AE3009757AC /* LCCardViewController.xib in Resources */,
 				40BA23651AC77AC7009757AC /* LCLearningViewController.xib in Resources */,
 				4018141E1AC979EB00FFA8F1 /* defaultItems.xml in Resources */,
+				40074AF01ACB87030090C94E /* btnBg.png in Resources */,
 				400E19F31AC7163D0002F00C /* Default-568h@2x.png in Resources */,
 				401814221AC97A3100FFA8F1 /* cardBackBg.png in Resources */,
 			);
