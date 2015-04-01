@@ -9,6 +9,7 @@
             <connections>
                 <outlet property="cardBackImage" destination="k0d-KT-Pza" id="ZNz-n8-4Vb"/>
                 <outlet property="enLabel" destination="msB-dN-Mif" id="Xbg-YP-MVl"/>
+                <outlet property="transcriptionLabel" destination="nGt-dZ-1nJ" id="h4s-nh-19e"/>
                 <outlet property="view" destination="Rri-Iy-Ot7" id="uZE-r1-mM9"/>
             </connections>
         </placeholder>
@@ -35,9 +36,9 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" verticalHuggingPriority="252" horizontalCompressionResistancePriority="700" verticalCompressionResistancePriority="701" text="englishText" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msB-dN-Mif">
-                    <rect key="frame" x="10" y="254" width="300" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="10" y="239" width="300" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                    <color key="textColor" red="0.50980392156862742" green="0.49019607843137253" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgD-2P-gqW">
@@ -46,7 +47,6 @@
                         <constraint firstAttribute="height" constant="30" id="W6m-3A-5Ly"/>
                         <constraint firstAttribute="width" constant="120" id="kRt-De-VM9"/>
                     </constraints>
-                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="6"/>
                     <state key="normal" title="Выучено" backgroundImage="btnBg.png">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
@@ -55,32 +55,42 @@
                     </connections>
                 </button>
                 <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardBackBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="k0d-KT-Pza">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <rect key="frame" x="0.0" y="5" width="320" height="558"/>
                     <accessibility key="accessibilityConfiguration">
                         <accessibilityTraits key="traits" none="YES" image="YES" notEnabled="YES"/>
                     </accessibility>
                 </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="transText" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGt-dZ-1nJ">
+                    <rect key="frame" x="10" y="273" width="300" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.50980392156862742" green="0.49019607843137253" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="centerX" secondItem="yZM-cc-yin" secondAttribute="centerX" id="2bM-LD-gaH"/>
-                <constraint firstItem="XLl-bH-Es1" firstAttribute="height" secondItem="k0d-KT-Pza" secondAttribute="height" id="3ED-iv-jTl"/>
+                <constraint firstItem="XLl-bH-Es1" firstAttribute="height" secondItem="k0d-KT-Pza" secondAttribute="height" constant="10" id="3ED-iv-jTl"/>
+                <constraint firstItem="nGt-dZ-1nJ" firstAttribute="top" secondItem="msB-dN-Mif" secondAttribute="bottom" id="4V3-a4-5N7"/>
                 <constraint firstAttribute="bottom" secondItem="MgD-2P-gqW" secondAttribute="bottom" constant="50" id="7jv-qM-f9Y"/>
                 <constraint firstAttribute="trailing" secondItem="msB-dN-Mif" secondAttribute="trailing" constant="10" id="ALS-7O-7jY"/>
                 <constraint firstItem="msB-dN-Mif" firstAttribute="leading" secondItem="Rri-Iy-Ot7" secondAttribute="leading" constant="10" id="JTg-SN-0qv"/>
+                <constraint firstAttribute="trailing" secondItem="nGt-dZ-1nJ" secondAttribute="trailing" constant="10" id="LpH-Xt-0iv"/>
                 <constraint firstAttribute="trailing" secondItem="XLl-bH-Es1" secondAttribute="trailing" id="NgK-MO-1Sx"/>
                 <constraint firstAttribute="centerX" secondItem="msB-dN-Mif" secondAttribute="centerX" id="Pkc-Jv-gb7"/>
                 <constraint firstItem="XLl-bH-Es1" firstAttribute="width" secondItem="k0d-KT-Pza" secondAttribute="width" id="TtM-oX-WmF"/>
                 <constraint firstItem="yZM-cc-yin" firstAttribute="top" secondItem="Rri-Iy-Ot7" secondAttribute="top" constant="50" id="WeX-Bz-W69"/>
                 <constraint firstAttribute="centerX" secondItem="MgD-2P-gqW" secondAttribute="centerX" id="cPg-Ms-5Gr"/>
                 <constraint firstAttribute="centerX" secondItem="XLl-bH-Es1" secondAttribute="centerX" id="cqk-gS-1Uk"/>
+                <constraint firstItem="nGt-dZ-1nJ" firstAttribute="leading" secondItem="Rri-Iy-Ot7" secondAttribute="leading" constant="10" id="cuA-9P-5I2"/>
                 <constraint firstItem="XLl-bH-Es1" firstAttribute="top" secondItem="Rri-Iy-Ot7" secondAttribute="top" id="gpT-j1-xc2"/>
                 <constraint firstAttribute="centerY" secondItem="XLl-bH-Es1" secondAttribute="centerY" id="hUi-Fq-mnk"/>
                 <constraint firstAttribute="centerX" secondItem="k0d-KT-Pza" secondAttribute="centerX" id="lwM-fd-IAQ"/>
+                <constraint firstAttribute="centerX" secondItem="nGt-dZ-1nJ" secondAttribute="centerX" id="mq8-qu-Teh"/>
                 <constraint firstAttribute="centerY" secondItem="k0d-KT-Pza" secondAttribute="centerY" id="nOn-2P-a3X"/>
                 <constraint firstAttribute="bottom" secondItem="XLl-bH-Es1" secondAttribute="bottom" id="q6P-Or-yeS"/>
-                <constraint firstAttribute="centerY" secondItem="msB-dN-Mif" secondAttribute="centerY" constant="19.5" id="svN-uX-ZXR"/>
+                <constraint firstAttribute="centerY" secondItem="nGt-dZ-1nJ" secondAttribute="centerY" id="t2P-d4-XsU"/>
                 <constraint firstItem="XLl-bH-Es1" firstAttribute="leading" secondItem="Rri-Iy-Ot7" secondAttribute="leading" id="x7H-u2-aDH"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

@@ -15,6 +15,7 @@
     int order;
 }
 @property (weak, nonatomic) IBOutlet UILabel *enLabel;
+@property (weak, nonatomic) IBOutlet UILabel *transcriptionLabel;
 
 @property (weak, nonatomic) IBOutlet UIImageView *cardBackImage;
 
@@ -39,7 +40,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    self.view.userInteractionEnabled = NO;
-    self.enLabel.text =  [[NSString alloc]initWithFormat:@"%@\n\n%@", self.item.en, self.item.transcription];
+    self.enLabel.text =  self.item.en;
+    self.transcriptionLabel.text = self.item.transcription;
     [self.enLabel updateConstraints];
     NSLog(@"text: %@",self.enLabel.text);
         NSLog(@"en: %@",self.item.en);
