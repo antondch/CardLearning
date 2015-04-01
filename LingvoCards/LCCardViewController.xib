@@ -13,7 +13,7 @@
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="redraw" id="Rri-Iy-Ot7">
+        <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="redraw" id="Rri-Iy-Ot7">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
@@ -34,8 +34,8 @@
                         <action selector="soundButton:" destination="-1" eventType="touchUpInside" id="TKV-kC-dKE"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="englishText" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msB-dN-Mif">
-                    <rect key="frame" x="117" y="254" width="86" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" verticalHuggingPriority="252" horizontalCompressionResistancePriority="700" verticalCompressionResistancePriority="701" text="englishText" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msB-dN-Mif">
+                    <rect key="frame" x="10" y="254" width="300" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -60,6 +60,8 @@
                 <constraint firstAttribute="centerX" secondItem="yZM-cc-yin" secondAttribute="centerX" id="2bM-LD-gaH"/>
                 <constraint firstItem="XLl-bH-Es1" firstAttribute="height" secondItem="k0d-KT-Pza" secondAttribute="height" id="3ED-iv-jTl"/>
                 <constraint firstAttribute="bottom" secondItem="MgD-2P-gqW" secondAttribute="bottom" constant="50" id="7jv-qM-f9Y"/>
+                <constraint firstAttribute="trailing" secondItem="msB-dN-Mif" secondAttribute="trailing" constant="10" id="ALS-7O-7jY"/>
+                <constraint firstItem="msB-dN-Mif" firstAttribute="leading" secondItem="Rri-Iy-Ot7" secondAttribute="leading" constant="10" id="JTg-SN-0qv"/>
                 <constraint firstAttribute="trailing" secondItem="XLl-bH-Es1" secondAttribute="trailing" id="NgK-MO-1Sx"/>
                 <constraint firstAttribute="centerX" secondItem="msB-dN-Mif" secondAttribute="centerX" id="Pkc-Jv-gb7"/>
                 <constraint firstItem="XLl-bH-Es1" firstAttribute="width" secondItem="k0d-KT-Pza" secondAttribute="width" id="TtM-oX-WmF"/>

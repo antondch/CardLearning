@@ -31,17 +31,19 @@
 }
 
 -(void)setIsActive:(BOOL)isActive{
-    self.view.userInteractionEnabled = isActive;
+//    self.view.userInteractionEnabled = isActive;
     _isActive = isActive;
-    self.enLabel.hidden = !isActive;
+//    self.enLabel.hidden = !isActive;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    self.view.userInteractionEnabled = NO;
-    self.enLabel.text = self.item.en;
+    self.enLabel.text =  [[NSString alloc]initWithFormat:@"%@\n\n%@", self.item.en, self.item.transcription];
+    [self.enLabel updateConstraints];
     NSLog(@"text: %@",self.enLabel.text);
         NSLog(@"en: %@",self.item.en);
+        NSLog(@"transcription: %@",self.item.transcription);
     isRotated = NO;
     
     CGSize appSize = [[UIScreen mainScreen] bounds].size;
